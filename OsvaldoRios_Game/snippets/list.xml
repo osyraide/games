@@ -12,7 +12,10 @@
     </snippet>
     <snippet actorid="20" attachedevent="true" class="scripts.ActorEvents_20" classname="scripts.ActorEvents_20" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="9" name="ActorEvents_20" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
-        <events/>
+        <events>
+            <event displayName="Updating" enabled="false" id="1" name="step" order="1" repeats="true"/>
+            <event displayName="Created" enabled="false" id="2" name="init" order="2" repeats="true"/>
+        </events>
     </snippet>
     <snippet actorid="22" attachedevent="true" class="scripts.ActorEvents_22" classname="scripts.ActorEvents_22" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="10" name="ActorEvents_22" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>

@@ -7,16 +7,90 @@
                     <group eventID="1" id="-1">
                         <setanim comment="false" x="37" y="73">
                             <ACTOR eid="this" id="0"/>
+                            <int id="1" val="Walk Right"/>
+                        </setanim>
+                        <push-shove2 comment="false" x="37" y="100">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="180"/>
+                            <int id="3" val="-.2"/>
+                        </push-shove2>
+                    </group>
+                    <keystate comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <control eid="3" id="1"/>
+                    </keystate>
+                </if>
+                <else-if comment="false" x="26" y="139">
+                    <group eventID="1" id="-1">
+                        <setanim comment="false" x="37" y="172">
+                            <ACTOR eid="this" id="0"/>
                             <int id="1" val="Walk Left"/>
                         </setanim>
+                        <push-shove2 comment="false" x="37" y="199">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="180"/>
+                            <int id="3" val=".2"/>
+                        </push-shove2>
                     </group>
                     <keystate comment="false" id="0" x="0" y="0">
                         <int id="0" val="0"/>
                         <control eid="2" id="1"/>
                     </keystate>
-                </if>
+                </else-if>
+                <else-if comment="false" x="26" y="238">
+                    <group eventID="1" id="-1">
+                        <setanim comment="false" x="37" y="271">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="Walking Backward"/>
+                        </setanim>
+                        <set-blend-actor comment="false" x="37" y="298">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="2"/>
+                        </set-blend-actor>
+                    </group>
+                    <keystate comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <control eid="1" id="1"/>
+                    </keystate>
+                </else-if>
+                <else-if comment="false" x="26" y="337">
+                    <group eventID="1" id="-1">
+                        <setanim comment="false" x="37" y="370">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="Walking Forward"/>
+                        </setanim>
+                        <set-blend-actor comment="false" x="37" y="397">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="2"/>
+                        </set-blend-actor>
+                    </group>
+                    <keystate comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <control eid="0" id="1"/>
+                    </keystate>
+                </else-if>
             </group>
         </step>
+    </group>
+    <group eventID="1" id="1">
+        <push-shove comment="false" x="191" y="642">
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="0"/>
+            <int id="2" val=""/>
+            <int id="3" val=""/>
+            <int id="4" val=""/>
+        </push-shove>
+        <setanim comment="false" x="191" y="669">
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="stationary"/>
+        </setanim>
+    </group>
+    <group eventID="1" id="3">
+        <else comment="false" x="124" y="583">
+            <group eventID="1" id="-1"/>
+        </else>
     </group>
     <group eventID="1" id="-1"/>
 </groups>

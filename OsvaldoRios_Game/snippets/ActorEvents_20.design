@@ -1,2 +1,56 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<groups/>
+<groups>
+    <group eventID="1" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="1" id="-1">
+                        <push-shove2 comment="false" x="37" y="73">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="60"/>
+                            <int id="3" val="10"/>
+                        </push-shove2>
+                    </group>
+                    <keystate comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <control eid="2" id="1"/>
+                    </keystate>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="1" id="1">
+        <create-actor3 comment="false" x="59" y="169">
+            <actortype eid="20" id="0"/>
+            <int id="1" val="83"/>
+            <int id="2" val="314"/>
+            <int id="3" val="0"/>
+        </create-actor3>
+    </group>
+    <group eventID="1" id="2">
+        <create-actor3 comment="false" x="41" y="236">
+            <actortype eid="20" id="0"/>
+            <screen-xy comment="false" id="1" x="0" y="0">
+                <int id="0" val="2"/>
+            </screen-xy>
+            <screen-xy comment="false" id="2" x="0" y="0">
+                <int id="0" val="3"/>
+            </screen-xy>
+            <int id="3" val="1"/>
+        </create-actor3>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="2" id="-1"/>
+        </init>
+    </group>
+    <group eventID="2" id="1">
+        <if comment="false" x="104" y="132">
+            <group eventID="2" id="-1"/>
+            <int id="0" val=""/>
+        </if>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>
