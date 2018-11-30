@@ -8,8 +8,8 @@
                         <push-shove2 comment="false" x="37" y="73">
                             <ACTOR eid="this" id="0"/>
                             <int id="1" val="1"/>
-                            <int id="2" val="60"/>
-                            <int id="3" val="10"/>
+                            <int id="2" val="180"/>
+                            <int id="3" val=".2"/>
                         </push-shove2>
                     </group>
                     <keystate comment="false" id="0" x="0" y="0">
@@ -17,40 +17,143 @@
                         <control eid="2" id="1"/>
                     </keystate>
                 </if>
+                <else-if comment="false" x="26" y="112">
+                    <group eventID="1" id="-1">
+                        <push-shove2 comment="false" x="37" y="145">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="180"/>
+                            <int id="3" val="-.2"/>
+                        </push-shove2>
+                    </group>
+                    <keystate comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <control eid="3" id="1"/>
+                    </keystate>
+                </else-if>
             </group>
         </step>
     </group>
-    <group eventID="1" id="1">
-        <create-actor3 comment="false" x="59" y="169">
-            <actortype eid="20" id="0"/>
-            <int id="1" val="83"/>
-            <int id="2" val="314"/>
-            <int id="3" val="0"/>
-        </create-actor3>
+    <group eventID="1" id="4">
+        <push-shove comment="false" x="137" y="264">
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="1"/>
+            <int id="2" val="11"/>
+            <int id="3" val="329"/>
+            <int id="4" val="5"/>
+        </push-shove>
     </group>
-    <group eventID="1" id="2">
-        <create-actor3 comment="false" x="41" y="236">
-            <actortype eid="20" id="0"/>
-            <screen-xy comment="false" id="1" x="0" y="0">
-                <int id="0" val="2"/>
-            </screen-xy>
-            <screen-xy comment="false" id="2" x="0" y="0">
-                <int id="0" val="3"/>
-            </screen-xy>
-            <int id="3" val="1"/>
-        </create-actor3>
+    <group eventID="1" id="-1">
+        <isonscreen comment="false" x="522" y="364">
+            <ACTOR eid="this" id="0"/>
+        </isonscreen>
     </group>
-    <group eventID="1" id="-1"/>
     <group eventID="2" id="0">
-        <init comment="false" x="15" y="15">
-            <group eventID="2" id="-1"/>
-        </init>
+        <step comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="2" id="-1">
+                        <set-dxy comment="false" x="37" y="78">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="5"/>
+                        </set-dxy>
+                    </group>
+                    <lesseq comment="false" id="0" x="0" y="0">
+                        <get-xy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="4"/>
+                        </get-xy>
+                        <int id="1" val="-2"/>
+                    </lesseq>
+                </if>
+                <else-if comment="false" x="26" y="117">
+                    <group eventID="2" id="-1">
+                        <set-dxy comment="false" x="37" y="155">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="-5"/>
+                        </set-dxy>
+                    </group>
+                    <moreeq comment="false" id="0" x="0" y="0">
+                        <get-xy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="4"/>
+                        </get-xy>
+                        <int id="1" val="720"/>
+                    </moreeq>
+                </else-if>
+            </group>
+        </step>
     </group>
-    <group eventID="2" id="1">
-        <if comment="false" x="104" y="132">
-            <group eventID="2" id="-1"/>
-            <int id="0" val=""/>
-        </if>
+    <group eventID="2" id="6">
+        <push-shove2 comment="false" x="493" y="168">
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="1"/>
+            <int id="2" val="180"/>
+            <int id="3" val="-1"/>
+        </push-shove2>
+    </group>
+    <group eventID="2" id="7">
+        <push-shove2 comment="false" x="328" y="442">
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="1"/>
+            <int id="2" val="180"/>
+            <int id="3" val="1"/>
+        </push-shove2>
     </group>
     <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <event-periodic comment="false" x="15" y="15">
+            <group eventID="3" id="-1"/>
+            <get-xy comment="false" id="0" x="0" y="0">
+                <ACTOR eid="lastcollided" id="0"/>
+                <int id="1" val="0"/>
+            </get-xy>
+            <ACTOR eid="this" id="2"/>
+        </event-periodic>
+    </group>
+    <group eventID="3" id="1">
+        <set-blend-actor comment="false" x="9" y="208">
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="5"/>
+        </set-blend-actor>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <event-periodic comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <clear-filter comment="false" x="26" y="42">
+                    <ACTOR eid="this" id="0"/>
+                </clear-filter>
+            </group>
+            <int id="0" val="3"/>
+            <ACTOR eid="this" id="2"/>
+        </event-periodic>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="5" id="-1">
+                        <setanim comment="false" x="37" y="78">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="Flashing Light"/>
+                        </setanim>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-xy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="4"/>
+                        </get-xy>
+                        <pick-type-by-name comment="false" id="1" x="0" y="0">
+                            <int id="0" val="Nicki"/>
+                        </pick-type-by-name>
+                    </eq>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="5" id="-1"/>
 </groups>

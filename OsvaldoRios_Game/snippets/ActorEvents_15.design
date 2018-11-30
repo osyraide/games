@@ -7,27 +7,33 @@
                     <group eventID="1" id="-1">
                         <setanim comment="false" x="37" y="73">
                             <ACTOR eid="this" id="0"/>
-                            <int id="1" val="Walk Right"/>
+                            <int id="1" val="Walking Backward"/>
                         </setanim>
-                        <push-shove2 comment="false" x="37" y="100">
+                        <set-blend-actor comment="false" x="37" y="100">
                             <ACTOR eid="this" id="0"/>
-                            <int id="1" val="1"/>
-                            <int id="2" val="180"/>
-                            <int id="3" val="-.2"/>
-                        </push-shove2>
+                            <int id="1" val="2"/>
+                        </set-blend-actor>
                     </group>
                     <keystate comment="false" id="0" x="0" y="0">
                         <int id="0" val="0"/>
-                        <control eid="3" id="1"/>
+                        <control eid="1" id="1"/>
                     </keystate>
                 </if>
                 <else-if comment="false" x="26" y="139">
                     <group eventID="1" id="-1">
-                        <setanim comment="false" x="37" y="172">
+                        <set-dxy comment="false" x="37" y="172">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="-5"/>
+                        </set-dxy>
+                        <clear-filter comment="false" x="37" y="199">
+                            <ACTOR eid="this" id="0"/>
+                        </clear-filter>
+                        <setanim comment="false" x="37" y="226">
                             <ACTOR eid="this" id="0"/>
                             <int id="1" val="Walk Left"/>
                         </setanim>
-                        <push-shove2 comment="false" x="37" y="199">
+                        <push-shove2 comment="false" x="37" y="253">
                             <ACTOR eid="this" id="0"/>
                             <int id="1" val="1"/>
                             <int id="2" val="180"/>
@@ -39,29 +45,39 @@
                         <control eid="2" id="1"/>
                     </keystate>
                 </else-if>
-                <else-if comment="false" x="26" y="238">
+                <else-if comment="false" x="26" y="292">
                     <group eventID="1" id="-1">
-                        <setanim comment="false" x="37" y="271">
+                        <set-dxy comment="false" x="37" y="325">
                             <ACTOR eid="this" id="0"/>
-                            <int id="1" val="Walking Backward"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="5"/>
+                        </set-dxy>
+                        <clear-filter comment="false" x="37" y="352">
+                            <ACTOR eid="this" id="0"/>
+                        </clear-filter>
+                        <setanim comment="false" x="37" y="379">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="Walk Right"/>
                         </setanim>
-                        <set-blend-actor comment="false" x="37" y="298">
+                        <push-shove2 comment="false" x="37" y="406">
                             <ACTOR eid="this" id="0"/>
-                            <int id="1" val="2"/>
-                        </set-blend-actor>
+                            <int id="1" val="1"/>
+                            <int id="2" val="180"/>
+                            <int id="3" val="-.2"/>
+                        </push-shove2>
                     </group>
                     <keystate comment="false" id="0" x="0" y="0">
                         <int id="0" val="0"/>
-                        <control eid="1" id="1"/>
+                        <control eid="3" id="1"/>
                     </keystate>
                 </else-if>
-                <else-if comment="false" x="26" y="337">
+                <else-if comment="false" x="26" y="445">
                     <group eventID="1" id="-1">
-                        <setanim comment="false" x="37" y="370">
+                        <setanim comment="false" x="37" y="478">
                             <ACTOR eid="this" id="0"/>
                             <int id="1" val="Walking Forward"/>
                         </setanim>
-                        <set-blend-actor comment="false" x="37" y="397">
+                        <set-blend-actor comment="false" x="37" y="505">
                             <ACTOR eid="this" id="0"/>
                             <int id="1" val="2"/>
                         </set-blend-actor>
@@ -75,22 +91,91 @@
         </step>
     </group>
     <group eventID="1" id="1">
-        <push-shove comment="false" x="191" y="642">
+        <get-dxy comment="false" x="1107" y="424">
             <ACTOR eid="this" id="0"/>
             <int id="1" val="0"/>
-            <int id="2" val=""/>
-            <int id="3" val=""/>
-            <int id="4" val=""/>
-        </push-shove>
-        <setanim comment="false" x="191" y="669">
-            <ACTOR eid="this" id="0"/>
-            <int id="1" val="stationary"/>
-        </setanim>
-    </group>
-    <group eventID="1" id="3">
-        <else comment="false" x="124" y="583">
-            <group eventID="1" id="-1"/>
-        </else>
+        </get-dxy>
     </group>
     <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="2" id="-1">
+                        <push-shove2 comment="false" x="37" y="78">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="180"/>
+                            <int id="3" val="-1"/>
+                        </push-shove2>
+                    </group>
+                    <lesseq comment="false" id="0" x="0" y="0">
+                        <get-xy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="4"/>
+                        </get-xy>
+                        <int id="1" val="-2"/>
+                    </lesseq>
+                </if>
+                <else-if comment="false" x="26" y="117">
+                    <group eventID="2" id="-1">
+                        <push-shove2 comment="false" x="37" y="155">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="180"/>
+                            <int id="3" val="1"/>
+                        </push-shove2>
+                    </group>
+                    <moreeq comment="false" id="0" x="0" y="0">
+                        <get-xy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="4"/>
+                        </get-xy>
+                        <int id="1" val="720"/>
+                    </moreeq>
+                </else-if>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="4">
+        <set-dxy comment="false" x="118" y="340">
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="0"/>
+            <int id="2" val="6"/>
+        </set-dxy>
+    </group>
+    <group eventID="2" id="12">
+        <else-if comment="false" x="584" y="363">
+            <group eventID="2" id="-1">
+                <set-xy comment="false" x="595" y="401">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="1"/>
+                    <int id="2" val="250"/>
+                </set-xy>
+            </group>
+            <lesseq comment="false" id="0" x="0" y="0">
+                <get-xy comment="false" id="0" x="0" y="0">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="5"/>
+                </get-xy>
+                <int id="1" val="250"/>
+            </lesseq>
+        </else-if>
+    </group>
+    <group eventID="2" id="-1">
+        <lesseq comment="false" x="555" y="490">
+            <int id="0" val=""/>
+            <int id="1" val="720"/>
+        </lesseq>
+        <eq comment="false" x="662" y="303">
+            <int id="0" val=""/>
+            <int id="1" val="-2"/>
+        </eq>
+    </group>
+    <group eventID="3" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="3" id="-1"/>
+        </step>
+    </group>
+    <group eventID="3" id="-1"/>
 </groups>
