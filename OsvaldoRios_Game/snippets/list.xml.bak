@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <pack>
-    <snippet attachedevent="true" class="scripts.SceneEvents_0" classname="scripts.SceneEvents_0" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="7" name="SceneEvents_0" oid="-1" package="scripts." sceneid="0" shared="false" type="scene">
-        <blocks/>
-        <events/>
-    </snippet>
     <snippet actorid="15" attachedevent="true" class="scripts.ActorEvents_15" classname="scripts.ActorEvents_15" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="8" name="ActorEvents_15" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
         <events>
@@ -13,17 +9,28 @@
         </events>
     </snippet>
     <snippet actorid="20" attachedevent="true" class="scripts.ActorEvents_20" classname="scripts.ActorEvents_20" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="9" name="ActorEvents_20" oid="-1" package="scripts." shared="false" type="actor">
+        <actorgroup default="" defaultValue="" desc="" dropdown="" fullname="Enemy" hidden="false" id="1" name="_Enemy" order="0"/>
         <blocks/>
         <events>
-            <event displayName="Updating" enabled="true" id="1" name="step" order="1" repeats="true"/>
-            <event displayName="Updating" enabled="true" id="2" name="step" order="3" repeats="true"/>
-            <event displayName="Every N secs" enabled="false" id="3" name="event-periodic" order="4" repeats="true"/>
-            <event displayName="Every N secs" enabled="false" id="4" name="event-periodic" order="5" repeats="true"/>
-            <event displayName="Updating" enabled="false" id="5" name="step" order="2" repeats="true"/>
+            <event displayName="Updating" enabled="false" id="1" name="step" order="1" repeats="true"/>
+            <event displayName="Updating" enabled="false" id="2" name="step" order="4" repeats="false"/>
+            <event displayName="Every N secs" enabled="true" id="3" name="event-periodic" order="5" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="22" attachedevent="true" class="scripts.ActorEvents_22" classname="scripts.ActorEvents_22" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="10" name="ActorEvents_22" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
+        <events>
+            <event displayName="Every N secs" enabled="true" id="1" name="event-periodic" order="1" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_0" classname="scripts.SceneEvents_0" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="11" name="SceneEvents_0" oid="-1" package="scripts." sceneid="0" shared="false" type="scene">
+        <blocks/>
         <events/>
+    </snippet>
+    <snippet actorid="20" attachedevent="true" class="scripts.ActorEvents_31" classname="scripts.ActorEvents_31" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="12" name="ActorEvents_31" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events>
+            <event displayName="Every N secs" enabled="true" id="3" name="event-periodic" order="5" repeats="true"/>
+        </events>
     </snippet>
 </pack>
