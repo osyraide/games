@@ -39,12 +39,12 @@
     <group eventID="3" id="1">
         <filter-negative comment="false" x="557" y="273"/>
     </group>
-    <group eventID="3" id="3">
+    <group eventID="3" id="2">
         <is-anim comment="false" x="594" y="344">
             <ACTOR eid="this" id="0"/>
         </is-anim>
     </group>
-    <group eventID="3" id="4">
+    <group eventID="3" id="3">
         <setanim comment="false" x="87" y="360">
             <ACTOR eid="this" id="0"/>
             <int id="1" val="Flashing Light"/>
@@ -66,7 +66,7 @@
             </group>
         </step>
     </group>
-    <group eventID="4" id="3">
+    <group eventID="4" id="1">
         <actor-set-prop comment="false" x="552" y="493">
             <ACTOR eid="lastcollided" id="0"/>
             <int id="1" val="Health"/>

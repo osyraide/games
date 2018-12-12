@@ -3,19 +3,43 @@
     <group eventID="3" id="0">
         <event-periodic comment="false" x="15" y="15">
             <group eventID="3" id="-1">
-                <setanim comment="false" x="26" y="42">
-                    <ACTOR eid="this" id="0"/>
-                    <int id="1" val="Flashing Light"/>
-                </setanim>
+                <if comment="false" x="26" y="42">
+                    <group eventID="3" id="-1">
+                        <setanim comment="false" x="37" y="80">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="Animation 1"/>
+                        </setanim>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <getanim comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                        </getanim>
+                        <int id="1" val="Flashing Light"/>
+                    </eq>
+                </if>
+                <else-if comment="false" x="26" y="119">
+                    <group eventID="3" id="-1">
+                        <setanim comment="false" x="37" y="157">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="Flashing Light"/>
+                        </setanim>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <getanim comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                        </getanim>
+                        <int id="1" val="Animation 1"/>
+                    </eq>
+                </else-if>
             </group>
-            <int id="0" val="1"/>
+            <int id="0" val="2"/>
             <ACTOR eid="this" id="2"/>
         </event-periodic>
     </group>
     <group eventID="3" id="1">
         <filter-negative comment="false" x="557" y="273"/>
     </group>
-    <group eventID="3" id="4">
+    <group eventID="3" id="2">
         <if comment="false" x="97" y="321">
             <group eventID="3" id="-1"/>
             <keystate comment="false" id="0" x="0" y="0">
@@ -37,5 +61,60 @@
         </else-if>
         <stop comment="false" x="97" y="458"/>
     </group>
+    <group eventID="3" id="3">
+        <setanim comment="false" x="519" y="131">
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="Flashing Light"/>
+        </setanim>
+        <setanim comment="false" x="519" y="158">
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="Animation 1"/>
+        </setanim>
+    </group>
     <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="4" id="-1">
+                        <custom-34 comment="false" x="37" y="83">
+                            <ACTOR eid="lastcollided" id="0"/>
+                            <neg comment="false" id="1" x="0" y="0">
+                                <int id="0" val="1"/>
+                            </neg>
+                        </custom-34>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <eq comment="false" id="0" x="0" y="0">
+                            <getanim comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                            </getanim>
+                            <int id="1" val="Flashing Light"/>
+                        </eq>
+                        <eq comment="false" id="1" x="0" y="0">
+                            <get-xy comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="lastcollided" id="0"/>
+                                <int id="1" val="0"/>
+                            </get-xy>
+                            <int id="1" val="326"/>
+                        </eq>
+                    </and>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="4" id="7">
+        <incdec comment="false" x="890" y="433">
+            <int id="0" val="0"/>
+            <int id="1" val="1"/>
+            <int id="2" val="1"/>
+        </incdec>
+    </group>
+    <group eventID="4" id="-1">
+        <collision-type2 comment="false" x="780" y="592">
+            <int id="0" val="0"/>
+            <int id="1" val="0"/>
+            <int id="2" val="0"/>
+        </collision-type2>
+    </group>
 </groups>

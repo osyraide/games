@@ -26,9 +26,10 @@
                 </if>
                 <else-if comment="false" x="26" y="166">
                     <group eventID="1" id="-1">
-                        <clear-filter comment="false" x="37" y="199">
+                        <set-blend-actor comment="false" x="37" y="199">
                             <ACTOR eid="this" id="0"/>
-                        </clear-filter>
+                            <int id="1" val="9"/>
+                        </set-blend-actor>
                         <set-dxy comment="false" x="37" y="226">
                             <ACTOR eid="this" id="0"/>
                             <int id="1" val="0"/>
@@ -52,9 +53,10 @@
                 </else-if>
                 <else-if comment="false" x="26" y="319">
                     <group eventID="1" id="-1">
-                        <clear-filter comment="false" x="37" y="352">
+                        <set-blend-actor comment="false" x="37" y="352">
                             <ACTOR eid="this" id="0"/>
-                        </clear-filter>
+                            <int id="1" val="9"/>
+                        </set-blend-actor>
                         <set-dxy comment="false" x="37" y="379">
                             <ACTOR eid="this" id="0"/>
                             <int id="1" val="0"/>
@@ -100,12 +102,6 @@
             </group>
         </step>
     </group>
-    <group eventID="1" id="1">
-        <get-dxy comment="false" x="1107" y="424">
-            <ACTOR eid="this" id="0"/>
-            <int id="1" val="0"/>
-        </get-dxy>
-    </group>
     <group eventID="1" id="-1"/>
     <group eventID="2" id="0">
         <step comment="false" x="15" y="15">
@@ -147,41 +143,7 @@
             </group>
         </step>
     </group>
-    <group eventID="2" id="1">
-        <set-dxy comment="false" x="118" y="340">
-            <ACTOR eid="this" id="0"/>
-            <int id="1" val="0"/>
-            <int id="2" val="6"/>
-        </set-dxy>
-    </group>
-    <group eventID="2" id="2">
-        <else-if comment="false" x="584" y="363">
-            <group eventID="2" id="-1">
-                <set-xy comment="false" x="595" y="401">
-                    <ACTOR eid="this" id="0"/>
-                    <int id="1" val="1"/>
-                    <int id="2" val="250"/>
-                </set-xy>
-            </group>
-            <lesseq comment="false" id="0" x="0" y="0">
-                <get-xy comment="false" id="0" x="0" y="0">
-                    <ACTOR eid="this" id="0"/>
-                    <int id="1" val="5"/>
-                </get-xy>
-                <int id="1" val="250"/>
-            </lesseq>
-        </else-if>
-    </group>
-    <group eventID="2" id="-1">
-        <eq comment="false" x="662" y="303">
-            <int id="0" val=""/>
-            <int id="1" val="-2"/>
-        </eq>
-        <lesseq comment="false" x="555" y="490">
-            <int id="0" val=""/>
-            <int id="1" val="720"/>
-        </lesseq>
-    </group>
+    <group eventID="2" id="-1"/>
     <group eventID="3" id="0">
         <step comment="false" x="15" y="15">
             <group eventID="3" id="-1">
@@ -212,33 +174,10 @@
             </group>
         </step>
     </group>
-    <group eventID="3" id="3">
-        <eq comment="false" x="386" y="356">
-            <int id="0" val=""/>
-            <int id="1" val=""/>
-        </eq>
-    </group>
-    <group eventID="3" id="-1">
-        <lesseq comment="false" x="338" y="275">
-            <int id="0" val=""/>
-            <int id="1" val="647"/>
-        </lesseq>
-        <eq comment="false" x="120" y="293">
-            <int id="0" val=""/>
-            <int id="1" val="689"/>
-        </eq>
-    </group>
+    <group eventID="3" id="-1"/>
     <group eventID="4" id="0">
         <step comment="false" x="15" y="15">
-            <group eventID="4" id="-1">
-                <set-val-8-1 comment="false" x="26" y="40">
-                    <int id="0" val="3"/>
-                </set-val-8-1>
-                <if comment="false" x="26" y="60">
-                    <group eventID="4" id="-1"/>
-                    <int id="0" val=""/>
-                </if>
-            </group>
+            <group eventID="4" id="-1"/>
         </step>
     </group>
     <group eventID="4" id="-1"/>
