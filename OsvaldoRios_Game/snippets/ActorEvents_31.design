@@ -36,34 +36,10 @@
             <ACTOR eid="this" id="2"/>
         </event-periodic>
     </group>
-    <group eventID="3" id="1">
-        <filter-negative comment="false" x="557" y="273"/>
-    </group>
-    <group eventID="3" id="2">
-        <is-anim comment="false" x="594" y="344">
-            <ACTOR eid="this" id="0"/>
-        </is-anim>
-    </group>
-    <group eventID="3" id="3">
-        <setanim comment="false" x="87" y="360">
-            <ACTOR eid="this" id="0"/>
-            <int id="1" val="Flashing Light"/>
-        </setanim>
-    </group>
     <group eventID="3" id="-1"/>
     <group eventID="4" id="0">
         <step comment="false" x="15" y="15">
-            <group eventID="4" id="-1">
-                <if comment="false" x="26" y="40">
-                    <group eventID="4" id="-1"/>
-                    <eq comment="false" id="0" x="0" y="0">
-                        <getanim comment="false" id="0" x="0" y="0">
-                            <ACTOR eid="this" id="0"/>
-                        </getanim>
-                        <int id="1" val="Flashing Light"/>
-                    </eq>
-                </if>
-            </group>
+            <group eventID="4" id="-1"/>
         </step>
     </group>
     <group eventID="4" id="1">
@@ -72,6 +48,17 @@
             <int id="1" val="Health"/>
             <int id="2" val=""/>
         </actor-set-prop>
+    </group>
+    <group eventID="4" id="2">
+        <if comment="false" x="289" y="251">
+            <group eventID="4" id="-1"/>
+            <eq comment="false" id="0" x="0" y="0">
+                <getanim comment="false" id="0" x="0" y="0">
+                    <ACTOR eid="this" id="0"/>
+                </getanim>
+                <int id="1" val="Flashing Light"/>
+            </eq>
+        </if>
     </group>
     <group eventID="4" id="-1"/>
     <group eventID="5" id="0">

@@ -83,11 +83,18 @@ class ActorEvents_22 extends ActorScript
 	{
 		
 		/* ======================= Every N seconds ======================== */
-		runPeriodically(1000 * 5, function(timeTask:TimedTask):Void
+		runPeriodically(1000 * 1, function(timeTask:TimedTask):Void
 		{
 			if(wrapper.enabled)
 			{
-				actor.setAnimation("" + "Flashing Light");
+				if((actor.getAnimation() == "Flashing Light"))
+				{
+					actor.setAnimation("" + "Back");
+				}
+				else if((actor.getAnimation() == "Back"))
+				{
+					actor.setAnimation("" + "Flashing Light");
+				}
 			}
 		}, actor);
 		

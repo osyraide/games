@@ -36,53 +36,16 @@
             <ACTOR eid="this" id="2"/>
         </event-periodic>
     </group>
-    <group eventID="3" id="1">
-        <filter-negative comment="false" x="557" y="273"/>
-    </group>
-    <group eventID="3" id="2">
-        <if comment="false" x="97" y="321">
-            <group eventID="3" id="-1"/>
-            <keystate comment="false" id="0" x="0" y="0">
-                <int id="0" val="0"/>
-                <control eid="2" id="1"/>
-            </keystate>
-        </if>
-        <else-if comment="false" x="97" y="386">
-            <group eventID="3" id="-1">
-                <setanim comment="false" x="108" y="419">
-                    <ACTOR eid="this" id="0"/>
-                    <int id="1" val="Flashing Light"/>
-                </setanim>
-            </group>
-            <keystate comment="false" id="0" x="0" y="0">
-                <int id="0" val="0"/>
-                <control eid="3" id="1"/>
-            </keystate>
-        </else-if>
-        <stop comment="false" x="97" y="458"/>
-    </group>
-    <group eventID="3" id="3">
-        <setanim comment="false" x="519" y="131">
-            <ACTOR eid="this" id="0"/>
-            <int id="1" val="Flashing Light"/>
-        </setanim>
-        <setanim comment="false" x="519" y="158">
-            <ACTOR eid="this" id="0"/>
-            <int id="1" val="Animation 1"/>
-        </setanim>
-    </group>
     <group eventID="3" id="-1"/>
     <group eventID="4" id="0">
         <step comment="false" x="15" y="15">
             <group eventID="4" id="-1">
                 <if comment="false" x="26" y="40">
                     <group eventID="4" id="-1">
-                        <custom-34 comment="false" x="37" y="83">
-                            <ACTOR eid="lastcollided" id="0"/>
-                            <neg comment="false" id="1" x="0" y="0">
-                                <int id="0" val="1"/>
-                            </neg>
-                        </custom-34>
+                        <set-blend-actor comment="false" x="37" y="83">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="2"/>
+                        </set-blend-actor>
                     </group>
                     <and comment="false" id="0" x="0" y="0">
                         <eq comment="false" id="0" x="0" y="0">
@@ -92,29 +55,100 @@
                             <int id="1" val="Flashing Light"/>
                         </eq>
                         <eq comment="false" id="1" x="0" y="0">
-                            <get-xy comment="false" id="0" x="0" y="0">
-                                <ACTOR eid="lastcollided" id="0"/>
+                            <pick-group comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                            </pick-group>
+                            <get-xy comment="false" id="1" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
                                 <int id="1" val="0"/>
                             </get-xy>
-                            <int id="1" val="326"/>
                         </eq>
                     </and>
                 </if>
             </group>
         </step>
     </group>
-    <group eventID="4" id="7">
+    <group eventID="4" id="1">
         <incdec comment="false" x="890" y="433">
             <int id="0" val="0"/>
             <int id="1" val="1"/>
             <int id="2" val="1"/>
         </incdec>
     </group>
+    <group eventID="4" id="2">
+        <custom-34 comment="false" x="68" y="318">
+            <ACTOR eid="lastcollided" id="0"/>
+            <neg comment="false" id="1" x="0" y="0">
+                <int id="0" val="1"/>
+            </neg>
+        </custom-34>
+    </group>
+    <group eventID="4" id="5">
+        <set-val-9-2 comment="false" x="831" y="270">
+            <ACTOR eid="this" id="0"/>
+        </set-val-9-2>
+    </group>
+    <group eventID="4" id="6">
+        <set-val-9-1 comment="false" x="947" y="353">
+            <actorgroup eid="3" id="0"/>
+        </set-val-9-1>
+    </group>
+    <group eventID="4" id="10">
+        <and comment="false" x="706" y="269">
+            <int id="0" val=""/>
+            <int id="1" val=""/>
+        </and>
+    </group>
+    <group eventID="4" id="11">
+        <set-val-9-3 comment="false" x="39" y="200">
+            <actortype eid="15" id="0"/>
+        </set-val-9-3>
+    </group>
+    <group eventID="4" id="12">
+        <getgroup comment="false" x="1055" y="153">
+            <ACTOR eid="this" id="0"/>
+        </getgroup>
+    </group>
     <group eventID="4" id="-1">
+        <pick-type comment="false" x="728" y="360">
+            <actortype eid="15" id="0"/>
+        </pick-type>
+        <get-xy comment="false" x="347" y="195">
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="0"/>
+        </get-xy>
+        <get-val-9-3 comment="false" x="524" y="309"/>
+        <get-xy comment="false" x="337" y="486">
+            <ACTOR eid="lastcollided" id="0"/>
+            <int id="1" val="0"/>
+        </get-xy>
+        <get-val-9-2 comment="false" x="642" y="210"/>
         <collision-type2 comment="false" x="780" y="592">
             <int id="0" val="0"/>
             <int id="1" val="0"/>
             <int id="2" val="0"/>
         </collision-type2>
     </group>
+    <group eventID="5" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <set-val-9-3 comment="false" x="26" y="40">
+                    <actortype eid="15" id="0"/>
+                </set-val-9-3>
+            </group>
+        </step>
+    </group>
+    <group eventID="5" id="1">
+        <eq comment="false" x="550" y="341">
+            <int id="0" val=""/>
+            <int id="1" val=""/>
+        </eq>
+    </group>
+    <group eventID="5" id="2">
+        <eq comment="false" x="92" y="141">
+            <int id="0" val=""/>
+            <int id="1" val=""/>
+        </eq>
+    </group>
+    <group eventID="5" id="-1"/>
 </groups>
