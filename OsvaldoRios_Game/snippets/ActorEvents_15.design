@@ -180,54 +180,64 @@
             <group eventID="4" id="-1">
                 <if comment="false" x="26" y="40">
                     <group eventID="4" id="-1">
-                        <set-blend-actor comment="false" x="37" y="60">
+                        <set-blend-actor comment="false" x="37" y="78">
                             <ACTOR eid="this" id="0"/>
                             <int id="1" val="3"/>
                         </set-blend-actor>
                     </group>
-                    <int id="0" val=""/>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-xy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="2"/>
+                        </get-xy>
+                        <int id="1" val="152"/>
+                    </eq>
                 </if>
             </group>
         </step>
     </group>
-    <group eventID="4" id="7">
+    <group eventID="4" id="1">
         <get-val-8-1 comment="false" x="854" y="241"/>
     </group>
-    <group eventID="4" id="16">
+    <group eventID="4" id="2">
         <set-val-8-1 comment="false" x="204" y="509">
             <int id="0" val=""/>
         </set-val-8-1>
     </group>
-    <group eventID="4" id="17">
-        <get-val-13-3 comment="false" x="206" y="170"/>
+    <group eventID="4" id="3">
+        <get-val-8-3 comment="false" x="206" y="170"/>
     </group>
-    <group eventID="4" id="18">
-        <set-val-13-3 comment="false" x="139" y="436">
+    <group eventID="4" id="4">
+        <set-val-8-3 comment="false" x="139" y="436">
             <neg comment="false" id="0" x="0" y="0">
                 <int id="0" val="1"/>
             </neg>
-        </set-val-13-3>
+        </set-val-8-3>
     </group>
-    <group eventID="4" id="21">
-        <dolater comment="false" x="333" y="320">
+    <group eventID="4" id="5">
+        <dolater comment="false" x="293" y="321">
             <group eventID="4" id="-1"/>
             <int id="0" val="2"/>
             <ACTOR eid="this" id="2"/>
         </dolater>
     </group>
-    <group eventID="4" id="24">
+    <group eventID="4" id="6">
         <shape-setgroup comment="false" x="613" y="580">
             <int id="0" val=""/>
             <actorgroup id="1"/>
         </shape-setgroup>
     </group>
-    <group eventID="4" id="28">
+    <group eventID="4" id="7">
         <eq comment="false" x="55" y="316">
-            <pick-type comment="false" id="0" x="0" y="0">
-                <actortype eid="31" id="0"/>
-            </pick-type>
+            <int id="0" val=""/>
             <int id="1" val=""/>
         </eq>
+    </group>
+    <group eventID="4" id="8">
+        <if comment="false" x="478" y="466">
+            <group eventID="4" id="-1"/>
+            <int id="0" val=""/>
+        </if>
     </group>
     <group eventID="4" id="-1">
         <and comment="false" x="420" y="76">
@@ -250,10 +260,7 @@
             <int id="1" val="117"/>
         </more>
         <less comment="false" x="397" y="198">
-            <get-xy comment="false" id="0" x="0" y="0">
-                <ACTOR eid="this" id="0"/>
-                <int id="1" val="0"/>
-            </get-xy>
+            <int id="0" val=""/>
             <int id="1" val="165"/>
         </less>
         <getanim comment="false" x="692" y="466">
@@ -262,12 +269,6 @@
         <getatype comment="false" x="982" y="273">
             <ACTOR eid="this" id="0"/>
         </getatype>
-        <eq comment="false" x="706" y="181">
-            <getanim comment="false" id="0" x="0" y="0">
-                <ACTOR eid="lastcreated" id="0"/>
-            </getanim>
-            <int id="1" val="Flashing Light"/>
-        </eq>
         <is-anim comment="false" x="761" y="378">
             <ACTOR eid="this" id="0"/>
         </is-anim>
@@ -277,6 +278,12 @@
         <getatype comment="false" x="482" y="347">
             <ACTOR eid="this" id="0"/>
         </getatype>
+        <getanim comment="false" x="679" y="69">
+            <ACTOR eid="lastcreated" id="0"/>
+        </getanim>
+        <pick-type comment="false" x="684" y="286">
+            <actortype eid="31" id="0"/>
+        </pick-type>
     </group>
     <group eventID="5" id="0">
         <event-collide-actortotype comment="false" x="15" y="15">
@@ -286,4 +293,29 @@
         </event-collide-actortotype>
     </group>
     <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="6" id="-1"/>
+        </draw>
+    </group>
+    <group eventID="6" id="1">
+        <draw-text comment="false" x="36" y="163">
+            <int id="0" val="Healt"/>
+            <int id="1" val=""/>
+            <int id="2" val=""/>
+        </draw-text>
+    </group>
+    <group eventID="6" id="-1"/>
+    <group eventID="7" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="7" id="-1"/>
+        </step>
+    </group>
+    <group eventID="7" id="1">
+        <if comment="false" x="205" y="172">
+            <group eventID="7" id="-1"/>
+            <int id="0" val=""/>
+        </if>
+    </group>
+    <group eventID="7" id="-1"/>
 </groups>
