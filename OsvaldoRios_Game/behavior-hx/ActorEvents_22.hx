@@ -69,15 +69,13 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_31 extends ActorScript
+class ActorEvents_22 extends ActorScript
 {
-	public var _FlashingLight:String;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
-		nameMap.set("Flashing Light", "_FlashingLight");
 		
 	}
 	
@@ -91,9 +89,9 @@ class ActorEvents_31 extends ActorScript
 			{
 				if((actor.getAnimation() == "Flashing Light"))
 				{
-					actor.setAnimation("" + "Animation 1");
+					actor.setAnimation("" + "Back");
 				}
-				else if((actor.getAnimation() == "Animation 1"))
+				else if((actor.getAnimation() == "Back"))
 				{
 					actor.setAnimation("" + "Flashing Light");
 				}

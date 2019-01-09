@@ -131,14 +131,14 @@
     </group>
     <group eventID="5" id="-1"/>
     <group eventID="6" id="0">
-        <receiver-2-37 comment="false" x="15" y="15">
-            <group eventID="-1" id="-1">
-                <comment-short comment="false" x="26" y="45">
+        <receiver-2-37 comment="false" x="407" y="102">
+            <group eventID="6" id="-1">
+                <comment-short comment="false" x="418" y="132">
                     <int id="0" val="Don&amp;apos;t take any damage if we&amp;apos;re invincible"/>
                 </comment-short>
-                <if comment="false" x="26" y="65">
-                    <group eventID="-1" id="-1">
-                        <stop comment="false" x="37" y="105"/>
+                <if comment="false" x="418" y="152">
+                    <group eventID="6" id="-1">
+                        <stop comment="false" x="429" y="192"/>
                     </group>
                     <or comment="false" id="0" x="0" y="0">
                         <or comment="false" id="0" x="0" y="0">
@@ -153,10 +153,10 @@
                         </lesseq>
                     </or>
                 </if>
-                <comment-short comment="false" x="26" y="137">
+                <comment-short comment="false" x="418" y="224">
                     <int id="0" val="Make sure health doesn&amp;apos;t drop below zero"/>
                 </comment-short>
-                <set-val-13-3 comment="false" x="26" y="157">
+                <set-val-13-3 comment="false" x="418" y="244">
                     <minmax comment="false" id="0" x="0" y="0">
                         <int id="0" val="1"/>
                         <minus comment="false" id="1" x="0" y="0">
@@ -166,25 +166,25 @@
                         <int id="2" val="0"/>
                     </minmax>
                 </set-val-13-3>
-                <say-this comment="false" x="26" y="200">
+                <say-this comment="false" x="418" y="287">
                     <int id="0" val="UpdateGlobalHealth"/>
                 </say-this>
-                <comment-short comment="false" x="26" y="220">
+                <comment-short comment="false" x="418" y="307">
                     <int id="0" val="Check if Actor has depleted its health"/>
                 </comment-short>
-                <if comment="false" x="26" y="240">
-                    <group eventID="-1" id="-1">
-                        <if comment="false" x="37" y="270">
-                            <group eventID="-1" id="-1">
-                                <say-this comment="false" x="48" y="295">
+                <if comment="false" x="418" y="327">
+                    <group eventID="6" id="-1">
+                        <if comment="false" x="429" y="357">
+                            <group eventID="6" id="-1">
+                                <say-this comment="false" x="440" y="382">
                                     <int id="0" val="Death"/>
                                 </say-this>
                             </group>
                             <get-val-13-23 comment="false" id="0" x="0" y="0"/>
                         </if>
-                        <if comment="false" x="37" y="327">
-                            <group eventID="-1" id="-1">
-                                <play-sound4 comment="false" x="48" y="360">
+                        <if comment="false" x="429" y="414">
+                            <group eventID="6" id="-1">
+                                <play-sound4 comment="false" x="440" y="447">
                                     <int id="0" val="0"/>
                                     <sound eid="var" id="1" vid="15"/>
                                 </play-sound4>
@@ -194,9 +194,9 @@
                                 <int id="1" val="0"/>
                             </value>
                         </if>
-                        <if comment="false" x="37" y="399">
-                            <group eventID="-1" id="-1">
-                                <die comment="false" x="48" y="429">
+                        <if comment="false" x="429" y="486">
+                            <group eventID="6" id="-1">
+                                <die comment="false" x="440" y="516">
                                     <ACTOR eid="this" id="0"/>
                                 </die>
                             </group>
@@ -211,11 +211,11 @@
                         <int id="1" val="0"/>
                     </lesseq>
                 </if>
-                <else comment="false" x="26" y="480">
-                    <group eventID="-1" id="-1">
-                        <if comment="false" x="37" y="500">
-                            <group eventID="-1" id="-1">
-                                <shout comment="false" x="48" y="533">
+                <else comment="false" x="418" y="567">
+                    <group eventID="6" id="-1">
+                        <if comment="false" x="429" y="587">
+                            <group eventID="6" id="-1">
+                                <shout comment="false" x="440" y="620">
                                     <ACTOR eid="this" id="0"/>
                                     <get-val-13-5 comment="false" id="1" x="0" y="0"/>
                                 </shout>
@@ -225,9 +225,9 @@
                                 <int id="1" val="0"/>
                             </value>
                         </if>
-                        <if comment="false" x="37" y="577">
-                            <group eventID="-1" id="-1">
-                                <play-sound4 comment="false" x="48" y="610">
+                        <if comment="false" x="429" y="664">
+                            <group eventID="6" id="-1">
+                                <play-sound4 comment="false" x="440" y="697">
                                     <int id="0" val="0"/>
                                     <sound eid="var" id="1" vid="14"/>
                                 </play-sound4>
@@ -237,19 +237,19 @@
                                 <int id="1" val="0"/>
                             </value>
                         </if>
-                        <comment-short comment="false" x="37" y="649">
+                        <comment-short comment="false" x="429" y="736">
                             <int id="0" val="Set up a delay so that the Actor can&amp;apos;t be damaged again for this many seconds."/>
                         </comment-short>
-                        <if comment="false" x="37" y="669">
-                            <group eventID="-1" id="-1">
-                                <set-val-13-10 comment="false" x="48" y="699">
+                        <if comment="false" x="429" y="756">
+                            <group eventID="6" id="-1">
+                                <set-val-13-10 comment="false" x="440" y="786">
                                     <false comment="false" id="0" x="0" y="0"/>
                                 </set-val-13-10>
-                                <dolater comment="false" x="48" y="724">
-                                    <group eventID="-1" id="-1">
-                                        <if comment="false" x="59" y="756">
-                                            <group eventID="-1" id="-1">
-                                                <set-val-13-10 comment="false" x="70" y="789">
+                                <dolater comment="false" x="440" y="811">
+                                    <group eventID="6" id="-1">
+                                        <if comment="false" x="451" y="843">
+                                            <group eventID="6" id="-1">
+                                                <set-val-13-10 comment="false" x="462" y="876">
                                                     <true comment="false" id="0" x="0" y="0"/>
                                                 </set-val-13-10>
                                             </group>
@@ -647,4 +647,144 @@
         </event-custom>
     </group>
     <group eventID="18" id="-1"/>
+    <group eventID="19" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="19" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="19" id="-1">
+                        <set-val-13-3 comment="false" x="37" y="83">
+                            <int id="0" val="2"/>
+                        </set-val-13-3>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <lesseq comment="false" id="0" x="0" y="0">
+                            <get-xy comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="var" id="0" vid="2147483647"/>
+                                <int id="1" val="0"/>
+                            </get-xy>
+                            <int id="1" val="179"/>
+                        </lesseq>
+                        <moreeq comment="false" id="1" x="0" y="0">
+                            <get-xy comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="var" id="0" vid="2147483647"/>
+                                <int id="1" val="0"/>
+                            </get-xy>
+                            <int id="1" val="132"/>
+                        </moreeq>
+                    </and>
+                </if>
+                <else-if comment="false" x="26" y="115">
+                    <group eventID="19" id="-1">
+                        <set-val-13-3 comment="false" x="37" y="158">
+                            <int id="0" val="1"/>
+                        </set-val-13-3>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <moreeq comment="false" id="0" x="0" y="0">
+                            <get-xy comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="var" id="0" vid="2147483647"/>
+                                <int id="1" val="0"/>
+                            </get-xy>
+                            <int id="1" val="241"/>
+                        </moreeq>
+                        <lesseq comment="false" id="1" x="0" y="0">
+                            <get-xy comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="var" id="0" vid="2147483647"/>
+                                <int id="1" val="0"/>
+                            </get-xy>
+                            <int id="1" val="283"/>
+                        </lesseq>
+                    </and>
+                </else-if>
+                <else-if comment="false" x="26" y="190">
+                    <group eventID="19" id="-1">
+                        <set-val-13-3 comment="false" x="37" y="233">
+                            <int id="0" val="0"/>
+                        </set-val-13-3>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <moreeq comment="false" id="0" x="0" y="0">
+                            <get-xy comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="0"/>
+                            </get-xy>
+                            <int id="1" val="354"/>
+                        </moreeq>
+                        <lesseq comment="false" id="1" x="0" y="0">
+                            <get-xy comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="0"/>
+                            </get-xy>
+                            <int id="1" val="400"/>
+                        </lesseq>
+                    </and>
+                </else-if>
+            </group>
+        </step>
+    </group>
+    <group eventID="19" id="2">
+        <get-xy comment="false" x="424" y="404">
+            <ACTOR eid="var" id="0" vid="2147483647"/>
+            <int id="1" val="0"/>
+        </get-xy>
+    </group>
+    <group eventID="19" id="4">
+        <if comment="false" x="412" y="523">
+            <group eventID="19" id="-1"/>
+            <keystate comment="false" id="0" x="0" y="0">
+                <int id="0" val="0"/>
+                <control eid="2" id="1"/>
+            </keystate>
+        </if>
+    </group>
+    <group eventID="19" id="5">
+        <set-blend-actor comment="false" x="797" y="472">
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="1"/>
+        </set-blend-actor>
+    </group>
+    <group eventID="19" id="11">
+        <pick-type comment="false" x="900" y="513">
+            <actortype eid="31" id="0"/>
+        </pick-type>
+    </group>
+    <group eventID="19" id="25">
+        <and comment="false" x="763" y="298">
+            <int id="0" val=""/>
+            <int id="1" val=""/>
+        </and>
+    </group>
+    <group eventID="19" id="26">
+        <getanim comment="false" x="1019" y="241">
+            <ACTOR eid="this" id="0"/>
+        </getanim>
+    </group>
+    <group eventID="19" id="-1">
+        <eq comment="false" x="714" y="634">
+            <getanim comment="false" id="0" x="0" y="0">
+                <ACTOR eid="lastcreated" id="0"/>
+            </getanim>
+            <int id="1" val="Flashing Light"/>
+        </eq>
+        <neg comment="false" x="745" y="573">
+            <int id="0" val="1"/>
+        </neg>
+        <minmax comment="false" x="143" y="601">
+            <int id="0" val="1"/>
+            <minus comment="false" id="1" x="0" y="0">
+                <get-val-13-3 comment="false" id="0" x="0" y="0"/>
+                <int id="1" val="1"/>
+            </minus>
+            <int id="2" val="0"/>
+        </minmax>
+        <and comment="false" x="455" y="518">
+            <int id="0" val=""/>
+            <int id="1" val=""/>
+        </and>
+        <collision-type2 comment="false" x="763" y="426">
+            <int id="0" val="0"/>
+            <int id="1" val="0"/>
+            <int id="2" val="0"/>
+        </collision-type2>
+    </group>
 </groups>
