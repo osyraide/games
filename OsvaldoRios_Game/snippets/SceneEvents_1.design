@@ -1,2 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<groups/>
+<groups>
+    <group eventID="1" id="0">
+        <event-actor-screen comment="false" x="15" y="15">
+            <group eventID="1" id="-1"/>
+            <ACTOR eid="lastcreated" id="0"/>
+            <int id="1" val="0"/>
+            <int id="2" val="0"/>
+        </event-actor-screen>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <event-actor-create-kill comment="false" x="15" y="15">
+            <group eventID="2" id="-1"/>
+            <int id="0" val="1"/>
+            <ACTOR eid="1" id="1"/>
+        </event-actor-create-kill>
+    </group>
+    <group eventID="2" id="1">
+        <create-actor3 comment="false" x="350" y="229">
+            <actortype id="0"/>
+            <int id="1" val=""/>
+            <int id="2" val=""/>
+            <int id="3" val="0"/>
+        </create-actor3>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>
