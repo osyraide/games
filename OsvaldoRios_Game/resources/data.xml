@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <pack>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="28" name="2" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="768" xpf="1.0" ypf="1.0"/>
+    <background atlasID="0" desc="" durations="" dx="-0.0" dy="-0.0" height="0" id="46" name="Continous" numframes="0" oid="-1" repeats="false" resized="false" shared="false" width="0" xpf="1.0" ypf="1.0"/>
     <custom-block blocktag="custom-37" blocktype="ACTION" code=".say(&quot;Health Manager&quot;, &quot;_customBlock_Damage&quot;, []);" desc="Subtracts a specific amount of health from the Actor." global="false" gui="Damage %0 By %1" id="37" message="Damage" name="Damage" oid="-1" return="void" shared="false" snippetID="13">
         <blank name="Self" order="0" type="actor"/>
         <blank name="Amount" order="1" type="number"/>
