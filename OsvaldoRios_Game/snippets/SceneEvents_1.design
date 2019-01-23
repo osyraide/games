@@ -25,4 +25,27 @@
         </create-actor3>
     </group>
     <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="3" id="-1"/>
+                    <keystate comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <control eid="2" id="1"/>
+                    </keystate>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="3" id="1">
+        <pause-unpause comment="false" x="720" y="248">
+            <int id="0" val="0"/>
+        </pause-unpause>
+    </group>
+    <group eventID="3" id="-1">
+        <isonscreen comment="false" x="676" y="384">
+            <ACTOR eid="lastcreated" id="0"/>
+        </isonscreen>
+    </group>
 </groups>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-val-0-1 comment="false" x="26" y="40">
+                    <int id="0" val=""/>
+                </set-val-0-1>
+            </group>
+        </step>
+    </group>
+    <group eventID="1" id="3">
+        <mousestate comment="false" x="529" y="560">
+            <int id="0" val="0"/>
+        </mousestate>
+    </group>
+    <group eventID="1" id="4">
+        <keycode comment="false" x="699" y="325">
+            <int id="0" val="0"/>
+        </keycode>
+    </group>
+    <group eventID="1" id="5">
+        <keystate comment="false" x="906" y="234">
+            <int id="0" val="0"/>
+            <control id="1"/>
+        </keystate>
+    </group>
+    <group eventID="1" id="6">
+        <keystate comment="false" x="135" y="98">
+            <int id="0" val="1"/>
+            <control eid="7" id="1"/>
+        </keystate>
+    </group>
+    <group eventID="1" id="7">
+        <keycode comment="false" x="583" y="203">
+            <int id="0" val="0"/>
+        </keycode>
+    </group>
+    <group eventID="1" id="8">
+        <simulate-key comment="false" x="267" y="382">
+            <int id="0" val="0"/>
+            <control eid="7" id="1"/>
+        </simulate-key>
+    </group>
+    <group eventID="1" id="9">
+        <if comment="false" x="205" y="228">
+            <group eventID="1" id="-1"/>
+            <int id="0" val=""/>
+        </if>
+    </group>
+    <group eventID="1" id="10">
+        <as-number comment="false" x="156" y="578">
+            <int id="0" val=""/>
+        </as-number>
+    </group>
+    <group eventID="1" id="-1">
+        <mod comment="false" x="117" y="151">
+            <mousexy comment="false" id="0" x="0" y="0">
+                <int id="0" val="0"/>
+                <int id="1" val="0"/>
+            </mousexy>
+            <int id="1" val="2"/>
+        </mod>
+    </group>
+</groups>
