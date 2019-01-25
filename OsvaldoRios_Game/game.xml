@@ -65,6 +65,11 @@
         <key id="4" keyname="Z" name="action1" vk="90" vks="90"/>
         <key id="5" keyname="X" name="action2" vk="88" vks="88"/>
         <key id="6" keyname="ENTER" name="enter" vk="10" vks="10"/>
+        <key id="7" keyname="A" name="Left" vk="65" vks="65"/>
+        <key id="8" keyname="D" name="Right" vk="68" vks="68"/>
+        <key id="9" keyname="W" name="Up" vk="87" vks="87"/>
+        <key id="10" keyname="S" name="Down" vk="83" vks="83"/>
+        <key id="11" keyname="SPACE" name="Jump" vk="32" vks="32"/>
     </input>
     <attcats>
         <cat id="-1" name="Default"/>

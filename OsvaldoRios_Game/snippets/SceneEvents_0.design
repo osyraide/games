@@ -2,7 +2,12 @@
 <groups>
     <group eventID="3" id="0">
         <step comment="false" x="15" y="15">
-            <group eventID="3" id="-1"/>
+            <group eventID="3" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="3" id="-1"/>
+                    <int id="0" val=""/>
+                </if>
+            </group>
         </step>
     </group>
     <group eventID="3" id="1">
@@ -59,12 +64,20 @@
         </incdec>
     </group>
     <group eventID="3" id="9">
-        <set-blend-actor comment="false" x="132" y="194">
+        <set-blend-actor comment="false" x="469" y="317">
             <ACTOR eid="1" id="0"/>
             <int id="1" val="6"/>
         </set-blend-actor>
     </group>
     <group eventID="3" id="-1">
+        <eq comment="false" x="894" y="368">
+            <int id="0" val=""/>
+            <int id="1" val="126"/>
+        </eq>
+        <get-xy comment="false" x="1006" y="267">
+            <ACTOR eid="lastcreated" id="0"/>
+            <int id="1" val="0"/>
+        </get-xy>
         <and comment="false" x="0" y="728">
             <less comment="false" id="0" x="0" y="0">
                 <get-xy comment="false" id="0" x="0" y="0">
@@ -75,14 +88,6 @@
             </less>
             <int id="1" val=""/>
         </and>
-        <get-xy comment="false" x="1006" y="267">
-            <ACTOR eid="lastcreated" id="0"/>
-            <int id="1" val="0"/>
-        </get-xy>
-        <eq comment="false" x="894" y="368">
-            <int id="0" val=""/>
-            <int id="1" val="126"/>
-        </eq>
     </group>
     <group eventID="4" id="0">
         <step comment="false" x="15" y="15">
@@ -100,4 +105,18 @@
             <int id="1" val=""/>
         </eq>
     </group>
+    <group eventID="5" id="0">
+        <event-type-create-kill comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <scene-change-through comment="false" x="26" y="47">
+                    <scene eid="1" id="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="1"/>
+                </scene-change-through>
+            </group>
+            <int id="0" val="1"/>
+            <actortype eid="15" id="1"/>
+        </event-type-create-kill>
+    </group>
+    <group eventID="5" id="-1"/>
 </groups>
