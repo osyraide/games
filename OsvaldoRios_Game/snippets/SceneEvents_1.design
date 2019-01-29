@@ -24,7 +24,7 @@
             <int id="3" val="0"/>
         </create-actor3>
     </group>
-    <group eventID="2" id="3">
+    <group eventID="2" id="2">
         <scene-change-color comment="false" x="521" y="508">
             <scene id="0"/>
             <int id="1" val="0"/>
@@ -35,7 +35,7 @@
             <color b="0" g="0" id="6" r="0"/>
         </scene-change-color>
     </group>
-    <group eventID="2" id="4">
+    <group eventID="2" id="3">
         <scene-change-through comment="false" x="7" y="164">
             <scene eid="1" id="0"/>
             <int id="1" val="0"/>
@@ -81,4 +81,42 @@
         </event-type-create-kill>
     </group>
     <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="5" id="-1"/>
+                    <int id="0" val=""/>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="5" id="1">
+        <or comment="false" x="150" y="337">
+            <int id="0" val=""/>
+            <int id="1" val=""/>
+        </or>
+    </group>
+    <group eventID="5" id="4">
+        <scene-change-through comment="false" x="446" y="258">
+            <scene eid="1" id="0"/>
+            <int id="1" val="0"/>
+            <int id="2" val=""/>
+        </scene-change-through>
+    </group>
+    <group eventID="5" id="5">
+        <push-shove comment="false" x="153" y="137">
+            <ACTOR eid="lastcreated" id="0"/>
+            <int id="1" val="0"/>
+            <int id="2" val=""/>
+            <int id="3" val=""/>
+            <int id="4" val=""/>
+        </push-shove>
+    </group>
+    <group eventID="5" id="-1">
+        <keystate comment="false" x="585" y="369">
+            <int id="0" val="0"/>
+            <control eid="0" id="1"/>
+        </keystate>
+    </group>
 </groups>

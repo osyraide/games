@@ -70,14 +70,6 @@
         </set-blend-actor>
     </group>
     <group eventID="3" id="-1">
-        <eq comment="false" x="894" y="368">
-            <int id="0" val=""/>
-            <int id="1" val="126"/>
-        </eq>
-        <get-xy comment="false" x="1006" y="267">
-            <ACTOR eid="lastcreated" id="0"/>
-            <int id="1" val="0"/>
-        </get-xy>
         <and comment="false" x="0" y="728">
             <less comment="false" id="0" x="0" y="0">
                 <get-xy comment="false" id="0" x="0" y="0">
@@ -88,6 +80,14 @@
             </less>
             <int id="1" val=""/>
         </and>
+        <get-xy comment="false" x="1006" y="267">
+            <ACTOR eid="lastcreated" id="0"/>
+            <int id="1" val="0"/>
+        </get-xy>
+        <eq comment="false" x="894" y="368">
+            <int id="0" val=""/>
+            <int id="1" val="126"/>
+        </eq>
     </group>
     <group eventID="4" id="0">
         <step comment="false" x="15" y="15">

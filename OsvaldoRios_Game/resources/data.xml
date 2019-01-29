@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <pack>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="28" name="2" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="768" xpf="1.0" ypf="1.0"/>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="17" fixedrot="false" fric="0.2" gid="3" id="47" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Block" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="48" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="48" name="Block" shared="false" width="64">
+        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
+            <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="true"/>
+        </anim>
+    </sprite>
     <custom-block blocktag="custom-37" blocktype="ACTION" code=".say(&quot;Health Manager&quot;, &quot;_customBlock_Damage&quot;, []);" desc="Subtracts a specific amount of health from the Actor." global="false" gui="Damage %0 By %1" id="37" message="Damage" name="Damage" oid="-1" return="void" shared="false" snippetID="13">
         <blank name="Self" order="0" type="actor"/>
         <blank name="Amount" order="1" type="number"/>
     </custom-block>
-    <sprite atlasID="0" default="1" defaultAnimation="1" desc="" height="96" id="32" name="Enemy" shared="false" width="48">
-        <anim across="1" down="1" durations="100" height="96" id="1" loop="true" name="Animation 1" numframes="1" originx="24" originy="48" sync="false" version="2" width="48">
-            <poly data="4,0,0,48,0,48,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="true"/>
-        </anim>
-    </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="9" fixedrot="false" fric="0.2" gid="3" id="20" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.1" name="Enemy" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="21" static="false">
         <snippets/>
     </actor>
@@ -17,6 +20,11 @@
         <anim across="2" down="1" durations="100,100" height="96" id="0" loop="true" name="Flashing Light" numframes="2" originx="24" originy="48" sync="false" version="2" width="96">
             <poly data="4,0,0,48,0,48,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Flashing Light" rest="0.0" sensor="true"/>
         </anim>
+        <anim across="1" down="1" durations="100" height="96" id="1" loop="true" name="Animation 1" numframes="1" originx="24" originy="48" sync="false" version="2" width="48">
+            <poly data="4,0,0,48,0,48,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="true"/>
+        </anim>
+    </sprite>
+    <sprite atlasID="0" default="1" defaultAnimation="1" desc="" height="96" id="32" name="Enemy" shared="false" width="48">
         <anim across="1" down="1" durations="100" height="96" id="1" loop="true" name="Animation 1" numframes="1" originx="24" originy="48" sync="false" version="2" width="48">
             <poly data="4,0,0,48,0,48,96,0,96" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="true"/>
         </anim>
@@ -54,7 +62,7 @@
     <tileset across="1" atlasID="0" desc="" down="1" id="25" name="hjvghjg" oid="-1" shared="false" th="32" tw="32">
         <tile collision="0" data="" durations="100" frames="0" id="0" order="-1"/>
     </tileset>
-    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="41" name="Level 2" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="480" xpf="1.0" ypf="1.0"/>
+    <background atlasID="0" desc="" durations="700,700" dx="-0.0" dy="-0.0" height="480" id="41" name="Level 2" numframes="2" oid="-1" repeats="false" resized="false" shared="false" width="480" xpf="1.0" ypf="1.0"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="46" name="Level22" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="480" xpf="1.0" ypf="1.0"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="15" fixedrot="false" fric="0.2" gid="3" id="42" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Light" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="43" static="false">
         <snippets/>
@@ -152,6 +160,26 @@
             </s>
         </snippets>
     </actor>
+    <sprite atlasID="0" default="4" defaultAnimation="4" desc="" height="128" id="16" name="Nicki" shared="false" width="64">
+        <anim across="2" down="2" durations="250,250,250,250" height="256" id="0" loop="true" name="Walk Right" numframes="4" originx="32" originy="64" sync="false" version="2" width="128">
+            <poly data="4,0,0,64,0,64,128,0,128" density="0.1" fric="0.2" gid="-1000" id="0" name="Walk Right" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="2" durations="250,250,250,250" height="256" id="1" loop="true" name="Walk Left" numframes="4" originx="32" originy="64" sync="false" version="2" width="128">
+            <poly data="4,0,0,64,0,64,128,0,128" density="0.1" fric="0.2" gid="-1000" id="0" name="Walk Left" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="2" durations="250,250,250,250" height="256" id="2" loop="true" name="Walking Forward" numframes="4" originx="32" originy="64" sync="false" version="2" width="128">
+            <poly data="4,0,0,64,0,64,128,0,128" density="0.1" fric="0.2" gid="-1000" id="0" name="Walking Forward" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="2" durations="250,250,250,250" height="256" id="3" loop="true" name="Walking Backward" numframes="4" originx="32" originy="64" sync="false" version="2" width="128">
+            <poly data="4,0,0,64,0,64,128,0,128" density="0.1" fric="0.2" gid="-1000" id="0" name="Walking Backward" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="2" durations="250,250,250" height="256" id="4" loop="true" name="Stationary" numframes="3" originx="32" originy="64" sync="false" version="2" width="128">
+            <poly data="4,0,0,64,0,64,128,0,128" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="3" down="2" durations="150,100,250,100,150" height="256" id="5" loop="true" name="Jumping" numframes="5" originx="32" originy="64" sync="false" version="2" width="192">
+            <poly data="4,0,0,64,0,64,128,0,128" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 5" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <sprite atlasID="0" default="4" defaultAnimation="4" desc="" height="128" id="45" name="Nicki" shared="false" width="64">
         <anim across="2" down="2" durations="250,250,250,250" height="256" id="0" loop="true" name="Walk Right" numframes="4" originx="32" originy="64" sync="false" version="2" width="128">
             <poly data="4,0,0,64,0,64,128,0,128" density="0.1" fric="0.2" gid="-1000" id="0" name="Walk Right" rest="0.0" sensor="false"/>
@@ -168,25 +196,20 @@
         <anim across="2" down="2" durations="250,250,250" height="256" id="4" loop="true" name="Stationary" numframes="3" originx="32" originy="64" sync="false" version="2" width="128">
             <poly data="4,0,0,64,0,64,128,0,128" density="0.1" fric="0.2" gid="3" id="0" name="Stationary" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="3" down="2" durations="300,200,300,200,200" height="256" id="5" loop="true" name="Jumping" numframes="5" originx="32" originy="64" sync="false" version="2" width="192">
-            <poly data="4,0,0,64,0,64,128,0,128" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 5" rest="0.0" sensor="false"/>
+        <anim across="3" down="2" durations="150,100,300,100,150" height="256" id="5" loop="true" name="Jumping" numframes="5" originx="32" originy="64" sync="false" version="2" width="192">
+            <poly data="4,30,0,35,0,35,128,30,128" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 5" rest="0.0" sensor="false"/>
         </anim>
-    </sprite>
-    <sprite atlasID="0" default="4" defaultAnimation="4" desc="" height="128" id="16" name="Nicki" shared="false" width="64">
-        <anim across="2" down="2" durations="250,250,250,250" height="256" id="0" loop="true" name="Walk Right" numframes="4" originx="32" originy="64" sync="false" version="2" width="128">
-            <poly data="4,0,0,64,0,64,128,0,128" density="0.1" fric="0.2" gid="-1000" id="0" name="Walk Right" rest="0.0" sensor="false"/>
+        <anim across="1" down="1" durations="100" height="128" id="6" loop="true" name="Jumping1" numframes="1" originx="32" originy="64" sync="false" version="2" width="64">
+            <poly data="4,0,0,64,0,64,128,0,128" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 6" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="2" down="2" durations="250,250,250,250" height="256" id="1" loop="true" name="Walk Left" numframes="4" originx="32" originy="64" sync="false" version="2" width="128">
-            <poly data="4,0,0,64,0,64,128,0,128" density="0.1" fric="0.2" gid="-1000" id="0" name="Walk Left" rest="0.0" sensor="false"/>
+        <anim across="1" down="1" durations="100" height="128" id="7" loop="true" name="Jumping2" numframes="1" originx="32" originy="64" sync="false" version="2" width="64">
+            <poly data="4,0,0,64,0,64,128,0,128" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 7" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="2" down="2" durations="250,250,250,250" height="256" id="2" loop="true" name="Walking Forward" numframes="4" originx="32" originy="64" sync="false" version="2" width="128">
-            <poly data="4,0,0,64,0,64,128,0,128" density="0.1" fric="0.2" gid="-1000" id="0" name="Walking Forward" rest="0.0" sensor="false"/>
+        <anim across="1" down="1" durations="100" height="128" id="8" loop="true" name="Jumping3" numframes="1" originx="32" originy="64" sync="false" version="2" width="64">
+            <poly data="4,0,0,64,0,64,128,0,128" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 8" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="2" down="2" durations="250,250,250,250" height="256" id="3" loop="true" name="Walking Backward" numframes="4" originx="32" originy="64" sync="false" version="2" width="128">
-            <poly data="4,0,0,64,0,64,128,0,128" density="0.1" fric="0.2" gid="-1000" id="0" name="Walking Backward" rest="0.0" sensor="false"/>
-        </anim>
-        <anim across="2" down="2" durations="250,250,250" height="256" id="4" loop="true" name="Stationary" numframes="3" originx="32" originy="64" sync="false" version="2" width="128">
-            <poly data="4,0,0,64,0,64,128,0,128" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
+        <anim across="1" down="1" durations="100" height="128" id="9" loop="true" name="Jumping4" numframes="1" originx="32" originy="64" sync="false" version="2" width="64">
+            <poly data="4,0,0,64,0,64,128,0,128" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 9" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <custom-block blocktag="custom-34" blocktype="ACTION" code=".say(&quot;Health Manager&quot;, &quot;_customBlock_SetHealth&quot;, []);" desc="" global="false" gui="Set Health For %0 To %1" id="34" message="SetHealth" name="SetHealth" oid="-1" return="void" shared="false" snippetID="13">
