@@ -48,7 +48,7 @@
             <event displayName="Every N secs" enabled="false" id="8" name="event-periodic" order="2" repeats="true"/>
             <event displayName="Control Switch" enabled="false" id="9" name="step" order="11" repeats="true"/>
             <event displayName="Scene 2 Controls" enabled="false" id="10" name="step" order="12" repeats="true"/>
-            <event displayName="Updating" enabled="true" id="11" name="step" order="14" repeats="true"/>
+            <event displayName="Updating" enabled="false" id="11" name="step" order="14" repeats="true"/>
             <event displayName="Updating" enabled="false" id="12" name="step" order="3" repeats="true"/>
         </events>
     </snippet>
