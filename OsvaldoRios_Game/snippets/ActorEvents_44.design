@@ -335,31 +335,18 @@
         </if>
     </group>
     <group eventID="4" id="-1">
-        <pick-type comment="false" x="684" y="286">
-            <actortype eid="31" id="0"/>
-        </pick-type>
-        <getanim comment="false" x="679" y="69">
-            <ACTOR eid="lastcreated" id="0"/>
-        </getanim>
-        <getatype comment="false" x="482" y="347">
-            <ACTOR eid="this" id="0"/>
-        </getatype>
-        <getgroup comment="false" x="491" y="323">
-            <ACTOR eid="this" id="0"/>
-        </getgroup>
-        <is-anim comment="false" x="761" y="378">
-            <ACTOR eid="this" id="0"/>
-        </is-anim>
-        <getatype comment="false" x="982" y="273">
-            <ACTOR eid="this" id="0"/>
-        </getatype>
-        <getanim comment="false" x="692" y="466">
-            <ACTOR eid="lastcollided" id="0"/>
-        </getanim>
-        <less comment="false" x="397" y="198">
+        <and comment="false" x="420" y="76">
             <int id="0" val=""/>
-            <int id="1" val="165"/>
-        </less>
+            <int id="1" val=""/>
+        </and>
+        <and comment="false" x="897" y="5">
+            <int id="0" val=""/>
+            <int id="1" val=""/>
+        </and>
+        <eq comment="false" x="426" y="140">
+            <get-val-8-2 comment="false" id="0" x="0" y="0"/>
+            <get-val-8-3 comment="false" id="1" x="0" y="0"/>
+        </eq>
         <more comment="false" x="145" y="239">
             <get-xy comment="false" id="0" x="0" y="0">
                 <ACTOR eid="this" id="0"/>
@@ -367,18 +354,31 @@
             </get-xy>
             <int id="1" val="117"/>
         </more>
-        <eq comment="false" x="426" y="140">
-            <get-val-8-2 comment="false" id="0" x="0" y="0"/>
-            <get-val-8-3 comment="false" id="1" x="0" y="0"/>
-        </eq>
-        <and comment="false" x="897" y="5">
+        <less comment="false" x="397" y="198">
             <int id="0" val=""/>
-            <int id="1" val=""/>
-        </and>
-        <and comment="false" x="420" y="76">
-            <int id="0" val=""/>
-            <int id="1" val=""/>
-        </and>
+            <int id="1" val="165"/>
+        </less>
+        <getanim comment="false" x="692" y="466">
+            <ACTOR eid="lastcollided" id="0"/>
+        </getanim>
+        <getatype comment="false" x="982" y="273">
+            <ACTOR eid="this" id="0"/>
+        </getatype>
+        <is-anim comment="false" x="761" y="378">
+            <ACTOR eid="this" id="0"/>
+        </is-anim>
+        <getgroup comment="false" x="491" y="323">
+            <ACTOR eid="this" id="0"/>
+        </getgroup>
+        <getatype comment="false" x="482" y="347">
+            <ACTOR eid="this" id="0"/>
+        </getatype>
+        <getanim comment="false" x="679" y="69">
+            <ACTOR eid="lastcreated" id="0"/>
+        </getanim>
+        <pick-type comment="false" x="684" y="286">
+            <actortype eid="31" id="0"/>
+        </pick-type>
     </group>
     <group eventID="6" id="0">
         <draw comment="false" x="15" y="15">
@@ -571,12 +571,30 @@
         </step>
     </group>
     <group eventID="14" id="-1">
-        <getanim comment="false" x="588" y="345">
-            <ACTOR eid="this" id="0"/>
-        </getanim>
         <eq comment="false" x="674" y="94">
             <int id="0" val=""/>
             <int id="1" val="Stationary"/>
         </eq>
+        <getanim comment="false" x="588" y="345">
+            <ACTOR eid="this" id="0"/>
+        </getanim>
     </group>
+    <group eventID="15" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="15" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="15" id="-1">
+                        <pause-unpause comment="false" x="37" y="73">
+                            <int id="0" val="0"/>
+                        </pause-unpause>
+                    </group>
+                    <keystate comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <control eid="6" id="1"/>
+                    </keystate>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="15" id="-1"/>
 </groups>

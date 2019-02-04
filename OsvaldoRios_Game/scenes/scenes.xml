@@ -2,4 +2,5 @@
 <scenes>
     <scene desc="" format="3.4.0" id="0" name="Red Carpet"/>
     <scene desc="" format="3.4.0" id="1" name="LEvel 2"/>
+    <scene desc="" format="3.4.0" id="2" name="PausedScene"/>
 </scenes>

@@ -119,4 +119,22 @@
             <control eid="0" id="1"/>
         </keystate>
     </group>
+    <group eventID="6" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="6" id="-1">
+                        <pause-unpause comment="false" x="37" y="73">
+                            <int id="0" val="0"/>
+                        </pause-unpause>
+                    </group>
+                    <keystate comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <control eid="6" id="1"/>
+                    </keystate>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="6" id="-1"/>
 </groups>
