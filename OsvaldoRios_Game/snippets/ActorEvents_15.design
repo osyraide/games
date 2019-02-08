@@ -163,18 +163,27 @@
             <group eventID="3" id="-1">
                 <if comment="false" x="26" y="40">
                     <group eventID="3" id="-1">
-                        <die comment="false" x="37" y="83">
+                        <die comment="false" x="37" y="88">
                             <ACTOR eid="this" id="0"/>
                         </die>
                     </group>
                     <and comment="false" id="0" x="0" y="0">
-                        <moreeq comment="false" id="0" x="0" y="0">
-                            <get-xy comment="false" id="0" x="0" y="0">
-                                <ACTOR eid="this" id="0"/>
-                                <int id="1" val="4"/>
-                            </get-xy>
-                            <int id="1" val="647"/>
-                        </moreeq>
+                        <and comment="false" id="0" x="0" y="0">
+                            <moreeq comment="false" id="0" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="0"/>
+                                </get-xy>
+                                <int id="1" val="647"/>
+                            </moreeq>
+                            <lesseq comment="false" id="1" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="0"/>
+                                </get-xy>
+                                <int id="1" val="724"/>
+                            </lesseq>
+                        </and>
                         <eq comment="false" id="1" x="0" y="0">
                             <getanim comment="false" id="0" x="0" y="0">
                                 <ACTOR eid="this" id="0"/>
@@ -198,7 +207,12 @@
             <int id="2" val="1"/>
         </scene-change-through>
     </group>
-    <group eventID="3" id="-1"/>
+    <group eventID="3" id="-1">
+        <keystate comment="false" x="711" y="461">
+            <int id="0" val="1"/>
+            <control eid="0" id="1"/>
+        </keystate>
+    </group>
     <group eventID="4" id="0">
         <step comment="false" x="15" y="15">
             <group eventID="4" id="-1">
@@ -264,18 +278,31 @@
         </if>
     </group>
     <group eventID="4" id="-1">
-        <and comment="false" x="420" y="76">
+        <pick-type comment="false" x="684" y="286">
+            <actortype eid="31" id="0"/>
+        </pick-type>
+        <getanim comment="false" x="679" y="69">
+            <ACTOR eid="lastcreated" id="0"/>
+        </getanim>
+        <getatype comment="false" x="482" y="347">
+            <ACTOR eid="this" id="0"/>
+        </getatype>
+        <getgroup comment="false" x="491" y="323">
+            <ACTOR eid="this" id="0"/>
+        </getgroup>
+        <is-anim comment="false" x="761" y="378">
+            <ACTOR eid="this" id="0"/>
+        </is-anim>
+        <getatype comment="false" x="982" y="273">
+            <ACTOR eid="this" id="0"/>
+        </getatype>
+        <getanim comment="false" x="692" y="466">
+            <ACTOR eid="lastcollided" id="0"/>
+        </getanim>
+        <less comment="false" x="397" y="198">
             <int id="0" val=""/>
-            <int id="1" val=""/>
-        </and>
-        <and comment="false" x="897" y="5">
-            <int id="0" val=""/>
-            <int id="1" val=""/>
-        </and>
-        <eq comment="false" x="426" y="140">
-            <get-val-8-2 comment="false" id="0" x="0" y="0"/>
-            <get-val-8-3 comment="false" id="1" x="0" y="0"/>
-        </eq>
+            <int id="1" val="165"/>
+        </less>
         <more comment="false" x="145" y="239">
             <get-xy comment="false" id="0" x="0" y="0">
                 <ACTOR eid="this" id="0"/>
@@ -283,31 +310,18 @@
             </get-xy>
             <int id="1" val="117"/>
         </more>
-        <less comment="false" x="397" y="198">
+        <eq comment="false" x="426" y="140">
+            <get-val-8-2 comment="false" id="0" x="0" y="0"/>
+            <get-val-8-3 comment="false" id="1" x="0" y="0"/>
+        </eq>
+        <and comment="false" x="897" y="5">
             <int id="0" val=""/>
-            <int id="1" val="165"/>
-        </less>
-        <getanim comment="false" x="692" y="466">
-            <ACTOR eid="lastcollided" id="0"/>
-        </getanim>
-        <getatype comment="false" x="982" y="273">
-            <ACTOR eid="this" id="0"/>
-        </getatype>
-        <is-anim comment="false" x="761" y="378">
-            <ACTOR eid="this" id="0"/>
-        </is-anim>
-        <getgroup comment="false" x="491" y="323">
-            <ACTOR eid="this" id="0"/>
-        </getgroup>
-        <getatype comment="false" x="482" y="347">
-            <ACTOR eid="this" id="0"/>
-        </getatype>
-        <getanim comment="false" x="679" y="69">
-            <ACTOR eid="lastcreated" id="0"/>
-        </getanim>
-        <pick-type comment="false" x="684" y="286">
-            <actortype eid="31" id="0"/>
-        </pick-type>
+            <int id="1" val=""/>
+        </and>
+        <and comment="false" x="420" y="76">
+            <int id="0" val=""/>
+            <int id="1" val=""/>
+        </and>
     </group>
     <group eventID="6" id="0">
         <draw comment="false" x="15" y="15">
@@ -464,11 +478,63 @@
             </group>
         </step>
     </group>
-    <group eventID="13" id="2">
+    <group eventID="13" id="1">
         <eq comment="false" x="359" y="176">
             <int id="0" val=""/>
             <int id="1" val=""/>
         </eq>
     </group>
     <group eventID="13" id="-1"/>
+    <group eventID="14" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="14" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="14" id="-1">
+                        <draw-text comment="false" x="37" y="60">
+                            <int id="0" val="-1"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="0"/>
+                        </draw-text>
+                    </group>
+                    <int id="0" val=""/>
+                </if>
+            </group>
+        </draw>
+    </group>
+    <group eventID="14" id="3">
+        <eq comment="false" x="281" y="141">
+            <get-xy comment="false" id="0" x="0" y="0">
+                <ACTOR eid="this" id="0"/>
+                <int id="1" val="0"/>
+            </get-xy>
+            <int id="1" val=""/>
+        </eq>
+    </group>
+    <group eventID="14" id="-1">
+        <less comment="false" x="641" y="352">
+            <int id="0" val=""/>
+            <int id="1" val="136"/>
+        </less>
+        <get-xy comment="false" x="765" y="202">
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="4"/>
+        </get-xy>
+        <eq comment="false" x="312" y="263">
+            <int id="0" val=""/>
+            <int id="1" val="136"/>
+        </eq>
+    </group>
+    <group eventID="15" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="15" id="-1"/>
+        </step>
+    </group>
+    <group eventID="15" id="4">
+        <draw-text comment="false" x="512" y="240">
+            <int id="0" val="-1"/>
+            <int id="1" val="0"/>
+            <int id="2" val="0"/>
+        </draw-text>
+    </group>
+    <group eventID="15" id="-1"/>
 </groups>

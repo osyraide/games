@@ -7,12 +7,12 @@
                     <ACTOR eid="this" id="0"/>
                     <int id="1" val="1"/>
                     <int id="2" val="45"/>
-                    <int id="3" val=".4"/>
+                    <int id="3" val=".2"/>
                 </push-shove2>
             </group>
         </step>
     </group>
-    <group eventID="1" id="2">
+    <group eventID="1" id="1">
         <setanim comment="false" x="496" y="123">
             <ACTOR eid="this" id="0"/>
             <int id="1" val="Grow"/>
@@ -48,13 +48,13 @@
                             <int id="1" val="4"/>
                         </set-frame>
                     </group>
-                    <eq comment="false" id="0" x="0" y="0">
+                    <lesseq comment="false" id="0" x="0" y="0">
                         <get-xy comment="false" id="0" x="0" y="0">
                             <ACTOR eid="this" id="0"/>
                             <int id="1" val="5"/>
                         </get-xy>
                         <int id="1" val="233"/>
-                    </eq>
+                    </lesseq>
                 </if>
                 <else-if comment="false" x="26" y="117">
                     <group eventID="3" id="-1">
@@ -63,13 +63,13 @@
                             <int id="1" val="3"/>
                         </set-frame>
                     </group>
-                    <eq comment="false" id="0" x="0" y="0">
+                    <lesseq comment="false" id="0" x="0" y="0">
                         <get-xy comment="false" id="0" x="0" y="0">
                             <ACTOR eid="this" id="0"/>
                             <int id="1" val="5"/>
                         </get-xy>
-                        <int id="1" val="288"/>
-                    </eq>
+                        <int id="1" val="270"/>
+                    </lesseq>
                 </else-if>
                 <else-if comment="false" x="26" y="194">
                     <group eventID="3" id="-1">
@@ -78,13 +78,13 @@
                             <int id="1" val="2"/>
                         </set-frame>
                     </group>
-                    <eq comment="false" id="0" x="0" y="0">
+                    <lesseq comment="false" id="0" x="0" y="0">
                         <get-xy comment="false" id="0" x="0" y="0">
                             <ACTOR eid="this" id="0"/>
                             <int id="1" val="5"/>
                         </get-xy>
-                        <int id="1" val="343"/>
-                    </eq>
+                        <int id="1" val="340"/>
+                    </lesseq>
                 </else-if>
                 <else-if comment="false" x="26" y="271">
                     <group eventID="3" id="-1">
@@ -93,13 +93,13 @@
                             <int id="1" val="1"/>
                         </set-frame>
                     </group>
-                    <eq comment="false" id="0" x="0" y="0">
+                    <lesseq comment="false" id="0" x="0" y="0">
                         <get-xy comment="false" id="0" x="0" y="0">
                             <ACTOR eid="this" id="0"/>
                             <int id="1" val="5"/>
                         </get-xy>
-                        <int id="1" val="398"/>
-                    </eq>
+                        <int id="1" val="380"/>
+                    </lesseq>
                 </else-if>
                 <else-if comment="false" x="26" y="348">
                     <group eventID="3" id="-1">
@@ -108,13 +108,13 @@
                             <int id="1" val="0"/>
                         </set-frame>
                     </group>
-                    <eq comment="false" id="0" x="0" y="0">
+                    <lesseq comment="false" id="0" x="0" y="0">
                         <get-xy comment="false" id="0" x="0" y="0">
                             <ACTOR eid="this" id="0"/>
                             <int id="1" val="5"/>
                         </get-xy>
                         <int id="1" val="453"/>
-                    </eq>
+                    </lesseq>
                 </else-if>
             </group>
         </step>
@@ -125,13 +125,33 @@
             <int id="1" val=""/>
         </set-frame>
     </group>
-    <group eventID="3" id="7">
+    <group eventID="3" id="2">
         <setanim comment="false" x="879" y="421">
             <ACTOR eid="this" id="0"/>
             <int id="1" val=""/>
         </setanim>
     </group>
     <group eventID="3" id="-1">
+        <eq comment="false" x="644" y="544">
+            <int id="0" val=""/>
+            <int id="1" val="453"/>
+        </eq>
+        <eq comment="false" x="531" y="291">
+            <int id="0" val=""/>
+            <int id="1" val="398"/>
+        </eq>
+        <eq comment="false" x="511" y="126">
+            <int id="0" val=""/>
+            <int id="1" val="343"/>
+        </eq>
+        <eq comment="false" x="617" y="259">
+            <int id="0" val=""/>
+            <int id="1" val="288"/>
+        </eq>
+        <eq comment="false" x="731" y="62">
+            <int id="0" val=""/>
+            <int id="1" val="233"/>
+        </eq>
         <get-dxy comment="false" x="778" y="263">
             <ACTOR eid="this" id="0"/>
             <int id="1" val="1"/>

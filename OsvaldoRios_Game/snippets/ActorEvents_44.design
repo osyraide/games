@@ -29,7 +29,7 @@
                         </set-dxy>
                         <setanim comment="false" x="80" y="235">
                             <ACTOR eid="this" id="0"/>
-                            <int id="1" val="Walk Left"/>
+                            <int id="1" val="Walking Forward"/>
                         </setanim>
                         <push-shove2 comment="false" x="80" y="262">
                             <ACTOR eid="this" id="0"/>
@@ -52,7 +52,7 @@
                         </set-dxy>
                         <setanim comment="false" x="80" y="361">
                             <ACTOR eid="this" id="0"/>
-                            <int id="1" val="Walk Right"/>
+                            <int id="1" val="Walk Forward"/>
                         </setanim>
                         <push-shove2 comment="false" x="80" y="388">
                             <ACTOR eid="this" id="0"/>

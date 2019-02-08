@@ -9,11 +9,11 @@
     <regions/>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="1" c="false" group="0" id="15" name="Nicki 1" sx="1.0" sy="1.0" x="30" y="250" z="0"/>
+        <actor a="0.0" aid="1" c="false" group="0" id="15" name="Nicki 1" sx="1.0" sy="1.0" x="22" y="251" z="0"/>
         <actor a="0.0" aid="4" c="false" group="3" id="20" name="Enemy 4" sx="1.0" sy="1.0" x="353" y="281" z="0"/>
         <actor a="0.0" aid="6" c="false" group="3" id="22" name="Enemy 2 6" sx="1.0" sy="1.0" x="240" y="250" z="0"/>
         <actor a="0.0" aid="7" c="false" group="3" id="22" name="Enemy 2 7" sx="1.0" sy="1.0" x="594" y="252" z="0"/>
-        <actor a="0.0" aid="8" c="false" group="3" id="31" name="Enemy Copy 8" sx="1.0" sy="1.0" x="131" y="282" z="0"/>
+        <actor a="0.0" aid="8" c="false" group="3" id="31" name="Enemy Copy 8" sx="1.0" sy="1.0" x="138" y="282" z="0"/>
         <actor a="0.0" aid="9" c="false" group="3" id="31" name="Enemy Copy 9" sx="1.0" sy="1.0" x="484" y="281" z="0"/>
         <actor a="0.0" aid="10" c="false" group="3" id="42" name="Light 10" sx="1.0" sy="1.0" x="167" y="279" z="0"/>
         <actor a="0.0" aid="11" c="false" group="3" id="42" name="Light 11" sx="1.0" sy="1.0" x="390" y="279" z="0"/>
