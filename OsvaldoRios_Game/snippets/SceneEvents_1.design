@@ -137,4 +137,26 @@
         </step>
     </group>
     <group eventID="6" id="-1"/>
+    <group eventID="7" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="7" id="-1">
+                <draw-text comment="false" x="26" y="40">
+                    <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="200"/>
+                    <int id="2" val="200"/>
+                </draw-text>
+            </group>
+        </draw>
+    </group>
+    <group eventID="7" id="-1"/>
+    <group eventID="8" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="8" id="-1">
+                <set-game-val-4 comment="false" x="26" y="40">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-game-val-4>
+            </group>
+        </init>
+    </group>
+    <group eventID="8" id="-1"/>
 </groups>

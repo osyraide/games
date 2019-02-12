@@ -3,12 +3,19 @@
     <group eventID="1" id="0">
         <step comment="false" x="15" y="15">
             <group eventID="1" id="-1">
-                <push-shove2 comment="false" x="26" y="40">
-                    <ACTOR eid="this" id="0"/>
-                    <int id="1" val="1"/>
-                    <int id="2" val="45"/>
-                    <int id="3" val=".2"/>
-                </push-shove2>
+                <if comment="false" x="26" y="40">
+                    <group eventID="1" id="-1">
+                        <push-shove2 comment="false" x="37" y="70">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="45"/>
+                            <int id="3" val=".2"/>
+                        </push-shove2>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <get-game-val-4 comment="false" id="0" x="0" y="0"/>
+                    </not>
+                </if>
             </group>
         </step>
     </group>
@@ -132,29 +139,29 @@
         </setanim>
     </group>
     <group eventID="3" id="-1">
-        <eq comment="false" x="644" y="544">
+        <get-dxy comment="false" x="778" y="263">
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="1"/>
+        </get-dxy>
+        <eq comment="false" x="731" y="62">
             <int id="0" val=""/>
-            <int id="1" val="453"/>
-        </eq>
-        <eq comment="false" x="531" y="291">
-            <int id="0" val=""/>
-            <int id="1" val="398"/>
-        </eq>
-        <eq comment="false" x="511" y="126">
-            <int id="0" val=""/>
-            <int id="1" val="343"/>
+            <int id="1" val="233"/>
         </eq>
         <eq comment="false" x="617" y="259">
             <int id="0" val=""/>
             <int id="1" val="288"/>
         </eq>
-        <eq comment="false" x="731" y="62">
+        <eq comment="false" x="511" y="126">
             <int id="0" val=""/>
-            <int id="1" val="233"/>
+            <int id="1" val="343"/>
         </eq>
-        <get-dxy comment="false" x="778" y="263">
-            <ACTOR eid="this" id="0"/>
-            <int id="1" val="1"/>
-        </get-dxy>
+        <eq comment="false" x="531" y="291">
+            <int id="0" val=""/>
+            <int id="1" val="398"/>
+        </eq>
+        <eq comment="false" x="644" y="544">
+            <int id="0" val=""/>
+            <int id="1" val="453"/>
+        </eq>
     </group>
 </groups>
