@@ -16,16 +16,6 @@
                         <get-game-val-4 comment="false" id="0" x="0" y="0"/>
                     </not>
                 </if>
-                <else-if comment="false" x="79" y="145">
-                    <group eventID="1" id="-1">
-                        <set-dxy comment="false" x="90" y="170">
-                            <ACTOR eid="this" id="0"/>
-                            <int id="1" val="0"/>
-                            <int id="2" val="0"/>
-                        </set-dxy>
-                    </group>
-                    <get-game-val-4 comment="false" id="0" x="0" y="0"/>
-                </else-if>
             </group>
         </step>
     </group>
@@ -36,7 +26,36 @@
         </if>
     </group>
     <group eventID="1" id="2">
-        <push-shove comment="false" x="494" y="129">
+        <scaleTo comment="false" x="694" y="165">
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="30"/>
+            <int id="2" val="30"/>
+            <int id="3" val=".3"/>
+            <int id="4" val="0"/>
+        </scaleTo>
+    </group>
+    <group eventID="1" id="3">
+        <set-dxy comment="false" x="665" y="484">
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="0"/>
+            <int id="2" val="0"/>
+        </set-dxy>
+    </group>
+    <group eventID="1" id="4">
+        <else-if comment="false" x="369" y="248">
+            <group eventID="1" id="-1">
+                <push-shove2 comment="false" x="380" y="273">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="1"/>
+                    <int id="2" val="135"/>
+                    <int id="3" val="0"/>
+                </push-shove2>
+            </group>
+            <get-game-val-4 comment="false" id="0" x="0" y="0"/>
+        </else-if>
+    </group>
+    <group eventID="1" id="5">
+        <push-shove comment="false" x="371" y="331">
             <ACTOR eid="this" id="0"/>
             <int id="1" val="1"/>
             <int id="2" val="-20"/>
@@ -59,7 +78,7 @@
                     <int id="2" val="234"/>
                 </set-xy>
             </group>
-            <int id="0" val="3"/>
+            <int id="0" val="5"/>
             <ACTOR eid="this" id="2"/>
         </event-periodic>
     </group>
@@ -81,5 +100,28 @@
             <int id="1" val="0"/>
         </get-xy>
     </group>
+    <group eventID="2" id="4">
+        <scaleTo comment="false" x="336" y="74">
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="30"/>
+            <int id="2" val="30"/>
+            <int id="3" val=".1"/>
+            <int id="4" val="0"/>
+        </scaleTo>
+    </group>
     <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <scaleTo comment="false" x="26" y="40">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="120"/>
+                    <int id="2" val="120"/>
+                    <int id="3" val=".1"/>
+                    <int id="4" val="9"/>
+                </scaleTo>
+            </group>
+        </step>
+    </group>
+    <group eventID="3" id="-1"/>
 </groups>
