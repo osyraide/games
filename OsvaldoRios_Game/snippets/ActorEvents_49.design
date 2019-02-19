@@ -139,29 +139,29 @@
         </setanim>
     </group>
     <group eventID="3" id="-1">
-        <get-dxy comment="false" x="778" y="263">
-            <ACTOR eid="this" id="0"/>
-            <int id="1" val="1"/>
-        </get-dxy>
-        <eq comment="false" x="731" y="62">
+        <eq comment="false" x="644" y="544">
             <int id="0" val=""/>
-            <int id="1" val="233"/>
-        </eq>
-        <eq comment="false" x="617" y="259">
-            <int id="0" val=""/>
-            <int id="1" val="288"/>
-        </eq>
-        <eq comment="false" x="511" y="126">
-            <int id="0" val=""/>
-            <int id="1" val="343"/>
+            <int id="1" val="453"/>
         </eq>
         <eq comment="false" x="531" y="291">
             <int id="0" val=""/>
             <int id="1" val="398"/>
         </eq>
-        <eq comment="false" x="644" y="544">
+        <eq comment="false" x="511" y="126">
             <int id="0" val=""/>
-            <int id="1" val="453"/>
+            <int id="1" val="343"/>
         </eq>
+        <eq comment="false" x="617" y="259">
+            <int id="0" val=""/>
+            <int id="1" val="288"/>
+        </eq>
+        <eq comment="false" x="731" y="62">
+            <int id="0" val=""/>
+            <int id="1" val="233"/>
+        </eq>
+        <get-dxy comment="false" x="778" y="263">
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="1"/>
+        </get-dxy>
     </group>
 </groups>
