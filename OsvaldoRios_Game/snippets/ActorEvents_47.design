@@ -16,6 +16,17 @@
                         <get-game-val-4 comment="false" id="0" x="0" y="0"/>
                     </not>
                 </if>
+                <else-if comment="false" x="79" y="145">
+                    <group eventID="1" id="-1">
+                        <push-shove2 comment="false" x="90" y="170">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="135"/>
+                            <int id="3" val="0"/>
+                        </push-shove2>
+                    </group>
+                    <get-game-val-4 comment="false" id="0" x="0" y="0"/>
+                </else-if>
             </group>
         </step>
     </group>
@@ -40,19 +51,6 @@
             <int id="1" val="0"/>
             <int id="2" val="0"/>
         </set-dxy>
-    </group>
-    <group eventID="1" id="4">
-        <else-if comment="false" x="369" y="248">
-            <group eventID="1" id="-1">
-                <push-shove2 comment="false" x="380" y="273">
-                    <ACTOR eid="this" id="0"/>
-                    <int id="1" val="1"/>
-                    <int id="2" val="135"/>
-                    <int id="3" val="0"/>
-                </push-shove2>
-            </group>
-            <get-game-val-4 comment="false" id="0" x="0" y="0"/>
-        </else-if>
     </group>
     <group eventID="1" id="5">
         <push-shove comment="false" x="371" y="331">

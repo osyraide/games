@@ -69,27 +69,13 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_15 extends ActorScript
+class ActorEvents_49 extends ActorScript
 {
-	public var _Health:Float;
-	public var _EnemyCopy:ActorType;
-	public var _FlashingLight:String;
-	public var _Left:String;
-	public var _2:Scene;
-	public var _22:Region;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
-		nameMap.set("Health", "_Health");
-		_Health = 0.0;
-		nameMap.set("Enemy Copy", "_EnemyCopy");
-		_EnemyCopy = getActorType(31);
-		nameMap.set("Flashing Light", "_FlashingLight");
-		nameMap.set("Left", "_Left");
-		nameMap.set("2", "_2");
-		nameMap.set("22", "_22");
 		
 	}
 	
@@ -101,31 +87,9 @@ class ActorEvents_15 extends ActorScript
 		{
 			if(wrapper.enabled)
 			{
-				if(isKeyDown("down"))
+				if(!(Engine.engine.getGameAttribute("Stationary")))
 				{
-					actor.setXVelocity(0);
-					actor.setAnimation("" + "Walking Backward");
-					actor.setBlendMode(BlendMode.DARKEN);
-				}
-				else if(isKeyDown("left"))
-				{
-					actor.setBlendMode(BlendMode.NORMAL);
-					actor.setXVelocity(-8);
-					actor.setAnimation("" + "Walk Left");
-					actor.applyImpulseInDirection(180, .2);
-				}
-				else if(isKeyDown("right"))
-				{
-					actor.setBlendMode(BlendMode.NORMAL);
-					actor.setXVelocity(8);
-					actor.setAnimation("" + "Walk Right");
-					actor.applyImpulseInDirection(180, -.2);
-				}
-				else if(isKeyDown("up"))
-				{
-					actor.setXVelocity(0);
-					actor.setAnimation("" + "Walking Forward");
-					actor.setBlendMode(BlendMode.DARKEN);
+					actor.applyImpulseInDirection(45, .2);
 				}
 			}
 		});
@@ -135,28 +99,38 @@ class ActorEvents_15 extends ActorScript
 		{
 			if(wrapper.enabled)
 			{
-				if((actor.getScreenX() <= -2))
+				if((actor.getScreenY() <= 233))
 				{
-					actor.applyImpulseInDirection(180, -1);
+					actor.setCurrentFrame(Std.int(4));
 				}
-				else if((actor.getScreenX() >= 720))
+				else if((actor.getScreenY() <= 270))
 				{
-					actor.applyImpulseInDirection(180, 1);
+					actor.setCurrentFrame(Std.int(3));
+				}
+				else if((actor.getScreenY() <= 340))
+				{
+					actor.setCurrentFrame(Std.int(2));
+				}
+				else if((actor.getScreenY() <= 380))
+				{
+					actor.setCurrentFrame(Std.int(1));
+				}
+				else if((actor.getScreenY() <= 453))
+				{
+					actor.setCurrentFrame(Std.int(0));
 				}
 			}
 		});
 		
-		/* ======================== When Updating ========================= */
-		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		/* ======================= Every N seconds ======================== */
+		runPeriodically(1000 * 6, function(timeTask:TimedTask):Void
 		{
 			if(wrapper.enabled)
 			{
-				if((((actor.getX() >= 647) && (actor.getX() <= 724)) && (actor.getAnimation() == "Walking Forward")))
-				{
-					recycleActor(actor);
-				}
+				actor.setX(222);
+				actor.setY(233);
 			}
-		});
+		}, actor);
 		
 	}
 	
