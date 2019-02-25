@@ -69,19 +69,15 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_20 extends ActorScript
+class ActorEvents_31 extends ActorScript
 {
-	public var _Enemy:Group;
-	public var _Nicki:Actor;
-	public var _Nicki2:ActorType;
+	public var _FlashingLight:String;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
-		nameMap.set("Enemy", "_Enemy");
-		nameMap.set("Nicki", "_Nicki");
-		nameMap.set("Nicki2", "_Nicki2");
+		nameMap.set("Flashing Light", "_FlashingLight");
 		
 	}
 	
@@ -89,7 +85,7 @@ class ActorEvents_20 extends ActorScript
 	{
 		
 		/* ======================= Every N seconds ======================== */
-		runPeriodically(1000 * 2, function(timeTask:TimedTask):Void
+		runPeriodically(1000 * 1, function(timeTask:TimedTask):Void
 		{
 			if(wrapper.enabled)
 			{

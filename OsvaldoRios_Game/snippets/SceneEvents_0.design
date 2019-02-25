@@ -70,6 +70,14 @@
         </set-blend-actor>
     </group>
     <group eventID="3" id="-1">
+        <eq comment="false" x="894" y="368">
+            <int id="0" val=""/>
+            <int id="1" val="126"/>
+        </eq>
+        <get-xy comment="false" x="1006" y="267">
+            <ACTOR eid="lastcreated" id="0"/>
+            <int id="1" val="0"/>
+        </get-xy>
         <and comment="false" x="0" y="728">
             <less comment="false" id="0" x="0" y="0">
                 <get-xy comment="false" id="0" x="0" y="0">
@@ -80,24 +88,17 @@
             </less>
             <int id="1" val=""/>
         </and>
-        <get-xy comment="false" x="1006" y="267">
-            <ACTOR eid="lastcreated" id="0"/>
-            <int id="1" val="0"/>
-        </get-xy>
-        <eq comment="false" x="894" y="368">
-            <int id="0" val=""/>
-            <int id="1" val="126"/>
-        </eq>
     </group>
     <group eventID="4" id="0">
         <step comment="false" x="15" y="15">
-            <group eventID="4" id="-1">
-                <if comment="false" x="26" y="40">
-                    <group eventID="4" id="-1"/>
-                    <int id="0" val=""/>
-                </if>
-            </group>
+            <group eventID="4" id="-1"/>
         </step>
+    </group>
+    <group eventID="4" id="1">
+        <if comment="false" x="445" y="289">
+            <group eventID="4" id="-1"/>
+            <int id="0" val=""/>
+        </if>
     </group>
     <group eventID="4" id="-1">
         <eq comment="false" x="90" y="368">
@@ -118,19 +119,19 @@
             <actortype eid="15" id="1"/>
         </event-type-create-kill>
     </group>
-    <group eventID="5" id="2">
+    <group eventID="5" id="1">
         <get-xy comment="false" x="324" y="272">
             <ACTOR eid="lastcreated" id="0"/>
             <int id="1" val="0"/>
         </get-xy>
     </group>
-    <group eventID="5" id="3">
+    <group eventID="5" id="2">
         <eq comment="false" x="526" y="334">
             <int id="0" val=""/>
             <int id="1" val=""/>
         </eq>
     </group>
-    <group eventID="5" id="4">
+    <group eventID="5" id="3">
         <if comment="false" x="348" y="140">
             <group eventID="5" id="-1"/>
             <and comment="false" id="0" x="0" y="0">
@@ -336,11 +337,11 @@
         </eq>
     </group>
     <group eventID="8" id="0">
-        <draw comment="false" x="15" y="15">
+        <draw comment="false" x="40" y="115">
             <group eventID="8" id="-1">
-                <if comment="false" x="26" y="40">
+                <if comment="false" x="51" y="140">
                     <group eventID="8" id="-1">
-                        <draw-text comment="false" x="37" y="98">
+                        <draw-text comment="false" x="62" y="188">
                             <int id="0" val="-4"/>
                             <int id="1" val="342"/>
                             <int id="2" val="129"/>
@@ -381,6 +382,9 @@
         </draw>
     </group>
     <group eventID="8" id="-1">
+        <isalive comment="false" x="987" y="650">
+            <ACTOR eid="8" id="0"/>
+        </isalive>
         <eq comment="false" x="806" y="767">
             <get-xy comment="false" id="0" x="0" y="0">
                 <ACTOR eid="lastcreated" id="0"/>
@@ -391,8 +395,17 @@
                 <int id="1" val="0"/>
             </get-xy>
         </eq>
-        <isalive comment="false" x="987" y="650">
-            <ACTOR eid="8" id="0"/>
-        </isalive>
     </group>
+    <group eventID="9" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="9" id="-1">
+                <draw-text comment="false" x="26" y="40">
+                    <int id="0" val="Time Remaining:"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="0"/>
+                </draw-text>
+            </group>
+        </draw>
+    </group>
+    <group eventID="9" id="-1"/>
 </groups>

@@ -36,7 +36,7 @@
             <ACTOR eid="this" id="2"/>
         </event-periodic>
     </group>
-    <group eventID="3" id="3">
+    <group eventID="3" id="1">
         <create-actor3 comment="false" x="543" y="257">
             <actortype id="0"/>
             <int id="1" val=""/>
@@ -44,7 +44,7 @@
             <int id="3" val="0"/>
         </create-actor3>
     </group>
-    <group eventID="3" id="4">
+    <group eventID="3" id="2">
         <if comment="false" x="313" y="499">
             <group eventID="3" id="-1">
                 <die comment="false" x="324" y="532">

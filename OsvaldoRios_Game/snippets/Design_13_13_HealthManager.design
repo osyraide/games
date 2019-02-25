@@ -131,14 +131,14 @@
     </group>
     <group eventID="5" id="-1"/>
     <group eventID="6" id="0">
-        <receiver-2-37 comment="false" x="407" y="102">
+        <receiver-2-37 comment="false" x="179" y="59">
             <group eventID="6" id="-1">
-                <comment-short comment="false" x="418" y="132">
+                <comment-short comment="false" x="190" y="89">
                     <int id="0" val="Don&amp;apos;t take any damage if we&amp;apos;re invincible"/>
                 </comment-short>
-                <if comment="false" x="418" y="152">
+                <if comment="false" x="190" y="109">
                     <group eventID="6" id="-1">
-                        <stop comment="false" x="429" y="192"/>
+                        <stop comment="false" x="201" y="149"/>
                     </group>
                     <or comment="false" id="0" x="0" y="0">
                         <or comment="false" id="0" x="0" y="0">
@@ -153,10 +153,10 @@
                         </lesseq>
                     </or>
                 </if>
-                <comment-short comment="false" x="418" y="224">
+                <comment-short comment="false" x="190" y="181">
                     <int id="0" val="Make sure health doesn&amp;apos;t drop below zero"/>
                 </comment-short>
-                <set-val-13-3 comment="false" x="418" y="244">
+                <set-val-13-3 comment="false" x="190" y="201">
                     <minmax comment="false" id="0" x="0" y="0">
                         <int id="0" val="1"/>
                         <minus comment="false" id="1" x="0" y="0">
@@ -166,25 +166,25 @@
                         <int id="2" val="0"/>
                     </minmax>
                 </set-val-13-3>
-                <say-this comment="false" x="418" y="287">
+                <say-this comment="false" x="190" y="244">
                     <int id="0" val="UpdateGlobalHealth"/>
                 </say-this>
-                <comment-short comment="false" x="418" y="307">
+                <comment-short comment="false" x="190" y="264">
                     <int id="0" val="Check if Actor has depleted its health"/>
                 </comment-short>
-                <if comment="false" x="418" y="327">
+                <if comment="false" x="190" y="284">
                     <group eventID="6" id="-1">
-                        <if comment="false" x="429" y="357">
+                        <if comment="false" x="201" y="314">
                             <group eventID="6" id="-1">
-                                <say-this comment="false" x="440" y="382">
+                                <say-this comment="false" x="212" y="339">
                                     <int id="0" val="Death"/>
                                 </say-this>
                             </group>
                             <get-val-13-23 comment="false" id="0" x="0" y="0"/>
                         </if>
-                        <if comment="false" x="429" y="414">
+                        <if comment="false" x="201" y="371">
                             <group eventID="6" id="-1">
-                                <play-sound4 comment="false" x="440" y="447">
+                                <play-sound4 comment="false" x="212" y="404">
                                     <int id="0" val="0"/>
                                     <sound eid="var" id="1" vid="15"/>
                                 </play-sound4>
@@ -194,9 +194,9 @@
                                 <int id="1" val="0"/>
                             </value>
                         </if>
-                        <if comment="false" x="429" y="486">
+                        <if comment="false" x="201" y="443">
                             <group eventID="6" id="-1">
-                                <die comment="false" x="440" y="516">
+                                <die comment="false" x="212" y="473">
                                     <ACTOR eid="this" id="0"/>
                                 </die>
                             </group>
@@ -211,11 +211,11 @@
                         <int id="1" val="0"/>
                     </lesseq>
                 </if>
-                <else comment="false" x="418" y="567">
+                <else comment="false" x="190" y="524">
                     <group eventID="6" id="-1">
-                        <if comment="false" x="429" y="587">
+                        <if comment="false" x="201" y="544">
                             <group eventID="6" id="-1">
-                                <shout comment="false" x="440" y="620">
+                                <shout comment="false" x="212" y="577">
                                     <ACTOR eid="this" id="0"/>
                                     <get-val-13-5 comment="false" id="1" x="0" y="0"/>
                                 </shout>
@@ -225,9 +225,9 @@
                                 <int id="1" val="0"/>
                             </value>
                         </if>
-                        <if comment="false" x="429" y="664">
+                        <if comment="false" x="201" y="621">
                             <group eventID="6" id="-1">
-                                <play-sound4 comment="false" x="440" y="697">
+                                <play-sound4 comment="false" x="212" y="654">
                                     <int id="0" val="0"/>
                                     <sound eid="var" id="1" vid="14"/>
                                 </play-sound4>
@@ -237,19 +237,19 @@
                                 <int id="1" val="0"/>
                             </value>
                         </if>
-                        <comment-short comment="false" x="429" y="736">
+                        <comment-short comment="false" x="201" y="693">
                             <int id="0" val="Set up a delay so that the Actor can&amp;apos;t be damaged again for this many seconds."/>
                         </comment-short>
-                        <if comment="false" x="429" y="756">
+                        <if comment="false" x="201" y="713">
                             <group eventID="6" id="-1">
-                                <set-val-13-10 comment="false" x="440" y="786">
+                                <set-val-13-10 comment="false" x="212" y="743">
                                     <false comment="false" id="0" x="0" y="0"/>
                                 </set-val-13-10>
-                                <dolater comment="false" x="440" y="811">
+                                <dolater comment="false" x="212" y="768">
                                     <group eventID="6" id="-1">
-                                        <if comment="false" x="451" y="843">
+                                        <if comment="false" x="223" y="800">
                                             <group eventID="6" id="-1">
-                                                <set-val-13-10 comment="false" x="462" y="876">
+                                                <set-val-13-10 comment="false" x="234" y="833">
                                                     <true comment="false" id="0" x="0" y="0"/>
                                                 </set-val-13-10>
                                             </group>
@@ -361,11 +361,11 @@
     </group>
     <group eventID="12" id="-1"/>
     <group eventID="13" id="0">
-        <receive-message comment="false" x="15" y="15">
-            <group eventID="-1" id="-1">
-                <if comment="false" x="26" y="40">
-                    <group eventID="-1" id="-1">
-                        <set-game-att comment="false" x="37" y="65">
+        <receive-message comment="false" x="16" y="16">
+            <group eventID="13" id="-1">
+                <if comment="false" x="27" y="41">
+                    <group eventID="13" id="-1">
+                        <set-game-att comment="false" x="38" y="66">
                             <get-val-13-13 comment="false" id="0" x="0" y="0"/>
                             <as-number comment="false" id="1" x="0" y="0">
                                 <get-val-13-3 comment="false" id="0" x="0" y="0"/>
@@ -765,15 +765,25 @@
         </isonscreen>
     </group>
     <group eventID="19" id="-1">
-        <eq comment="false" x="714" y="634">
+        <eq comment="false" x="876" y="158">
             <getanim comment="false" id="0" x="0" y="0">
-                <ACTOR eid="lastcreated" id="0"/>
+                <ACTOR eid="lastcollided" id="0"/>
             </getanim>
             <int id="1" val="Flashing Light"/>
         </eq>
-        <neg comment="false" x="745" y="573">
-            <int id="0" val="1"/>
-        </neg>
+        <collision-bottom comment="false" x="38" y="417">
+            <int id="0" val="0"/>
+            <int id="1" val="0"/>
+        </collision-bottom>
+        <collision-type2 comment="false" x="763" y="426">
+            <int id="0" val="0"/>
+            <int id="1" val="0"/>
+            <int id="2" val="0"/>
+        </collision-type2>
+        <and comment="false" x="455" y="518">
+            <int id="0" val=""/>
+            <int id="1" val=""/>
+        </and>
         <minmax comment="false" x="143" y="601">
             <int id="0" val="1"/>
             <minus comment="false" id="1" x="0" y="0">
@@ -782,22 +792,12 @@
             </minus>
             <int id="2" val="0"/>
         </minmax>
-        <and comment="false" x="455" y="518">
-            <int id="0" val=""/>
-            <int id="1" val=""/>
-        </and>
-        <collision-type2 comment="false" x="763" y="426">
-            <int id="0" val="0"/>
-            <int id="1" val="0"/>
-            <int id="2" val="0"/>
-        </collision-type2>
-        <collision-bottom comment="false" x="38" y="417">
-            <int id="0" val="0"/>
-            <int id="1" val="0"/>
-        </collision-bottom>
-        <eq comment="false" x="876" y="158">
+        <neg comment="false" x="745" y="573">
+            <int id="0" val="1"/>
+        </neg>
+        <eq comment="false" x="714" y="634">
             <getanim comment="false" id="0" x="0" y="0">
-                <ACTOR eid="lastcollided" id="0"/>
+                <ACTOR eid="lastcreated" id="0"/>
             </getanim>
             <int id="1" val="Flashing Light"/>
         </eq>
@@ -955,21 +955,21 @@
             <group eventID="27" id="-1">
                 <if comment="false" x="26" y="47">
                     <group eventID="27" id="-1">
-                        <set-game-val-0 comment="false" x="37" y="82">
+                        <set-game-val-0 comment="false" x="37" y="77">
                             <false comment="false" id="0" x="0" y="0"/>
                         </set-game-val-0>
-                        <set-val-13-3 comment="false" x="37" y="107">
+                        <set-val-13-3 comment="false" x="37" y="102">
                             <minus comment="false" id="0" x="0" y="0">
                                 <get-val-13-3 comment="false" id="0" x="0" y="0"/>
                                 <int id="1" val="1"/>
                             </minus>
                         </set-val-13-3>
-                        <set-game-val-3 comment="false" x="37" y="137">
+                        <set-game-val-3 comment="false" x="37" y="132">
                             <get-val-13-3 comment="false" id="0" x="0" y="0"/>
                         </set-game-val-3>
-                        <dolater comment="false" x="37" y="162">
+                        <dolater comment="false" x="37" y="157">
                             <group eventID="27" id="-1">
-                                <set-game-val-0 comment="false" x="48" y="189">
+                                <set-game-val-0 comment="false" x="48" y="184">
                                     <true comment="false" id="0" x="0" y="0"/>
                                 </set-game-val-0>
                             </group>
@@ -987,24 +987,24 @@
             <actortype eid="31" id="1"/>
         </event-collide-actortotype>
     </group>
-    <group eventID="27" id="3">
+    <group eventID="27" id="1">
         <if comment="false" x="704" y="440">
             <group eventID="27" id="-1">
-                <set-game-val-0 comment="false" x="715" y="475">
+                <set-game-val-0 comment="false" x="715" y="470">
                     <false comment="false" id="0" x="0" y="0"/>
                 </set-game-val-0>
-                <set-val-13-3 comment="false" x="715" y="500">
+                <set-val-13-3 comment="false" x="715" y="495">
                     <minus comment="false" id="0" x="0" y="0">
                         <get-val-13-3 comment="false" id="0" x="0" y="0"/>
                         <int id="1" val="1"/>
                     </minus>
                 </set-val-13-3>
-                <set-game-val-3 comment="false" x="715" y="530">
+                <set-game-val-3 comment="false" x="715" y="525">
                     <get-val-13-3 comment="false" id="0" x="0" y="0"/>
                 </set-game-val-3>
-                <dolater comment="false" x="715" y="555">
+                <dolater comment="false" x="715" y="550">
                     <group eventID="27" id="-1">
-                        <set-game-val-0 comment="false" x="726" y="582">
+                        <set-game-val-0 comment="false" x="726" y="577">
                             <true comment="false" id="0" x="0" y="0"/>
                         </set-game-val-0>
                     </group>
@@ -1024,21 +1024,21 @@
             <group eventID="28" id="-1">
                 <if comment="false" x="26" y="47">
                     <group eventID="28" id="-1">
-                        <set-game-val-0 comment="false" x="37" y="82">
+                        <set-game-val-0 comment="false" x="37" y="77">
                             <false comment="false" id="0" x="0" y="0"/>
                         </set-game-val-0>
-                        <set-val-13-3 comment="false" x="37" y="107">
+                        <set-val-13-3 comment="false" x="37" y="102">
                             <minus comment="false" id="0" x="0" y="0">
                                 <get-val-13-3 comment="false" id="0" x="0" y="0"/>
                                 <int id="1" val="1"/>
                             </minus>
                         </set-val-13-3>
-                        <set-game-val-3 comment="false" x="37" y="137">
+                        <set-game-val-3 comment="false" x="37" y="132">
                             <get-val-13-3 comment="false" id="0" x="0" y="0"/>
                         </set-game-val-3>
-                        <dolater comment="false" x="37" y="162">
+                        <dolater comment="false" x="37" y="157">
                             <group eventID="28" id="-1">
-                                <set-game-val-0 comment="false" x="48" y="189">
+                                <set-game-val-0 comment="false" x="48" y="184">
                                     <true comment="false" id="0" x="0" y="0"/>
                                 </set-game-val-0>
                             </group>
@@ -1062,21 +1062,21 @@
             <group eventID="29" id="-1">
                 <if comment="false" x="26" y="47">
                     <group eventID="29" id="-1">
-                        <set-game-val-0 comment="false" x="37" y="82">
+                        <set-game-val-0 comment="false" x="37" y="77">
                             <false comment="false" id="0" x="0" y="0"/>
                         </set-game-val-0>
-                        <set-val-13-3 comment="false" x="37" y="107">
+                        <set-val-13-3 comment="false" x="37" y="102">
                             <minus comment="false" id="0" x="0" y="0">
                                 <get-val-13-3 comment="false" id="0" x="0" y="0"/>
                                 <int id="1" val="1"/>
                             </minus>
                         </set-val-13-3>
-                        <set-game-val-3 comment="false" x="37" y="137">
+                        <set-game-val-3 comment="false" x="37" y="132">
                             <get-val-13-3 comment="false" id="0" x="0" y="0"/>
                         </set-game-val-3>
-                        <dolater comment="false" x="37" y="162">
+                        <dolater comment="false" x="37" y="157">
                             <group eventID="29" id="-1">
-                                <set-game-val-0 comment="false" x="48" y="189">
+                                <set-game-val-0 comment="false" x="48" y="184">
                                     <true comment="false" id="0" x="0" y="0"/>
                                 </set-game-val-0>
                             </group>
