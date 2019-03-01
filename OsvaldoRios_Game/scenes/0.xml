@@ -13,8 +13,8 @@
         <actor a="0.0" aid="4" c="false" group="3" id="20" name="Enemy 4" sx="1.0" sy="1.0" x="353" y="281" z="0"/>
         <actor a="0.0" aid="6" c="false" group="3" id="22" name="Enemy 2 6" sx="1.0" sy="1.0" x="260" y="250" z="0"/>
         <actor a="0.0" aid="7" c="false" group="3" id="22" name="Enemy 2 7" sx="1.0" sy="1.0" x="593" y="252" z="0"/>
-        <actor a="0.0" aid="8" c="false" group="3" id="20" name="Enemy 8" sx="1.0" sy="1.0" x="160" y="282" z="0"/>
         <actor a="0.0" aid="9" c="false" group="3" id="20" name="Enemy 9" sx="1.0" sy="1.0" x="467" y="282" z="0"/>
+        <actor a="0.0" aid="10" c="false" group="3" id="20" name="Enemy 10" sx="1.0" sy="1.0" x="138" y="282" z="0"/>
     </actors>
     <snippets/>
     <terrain>
