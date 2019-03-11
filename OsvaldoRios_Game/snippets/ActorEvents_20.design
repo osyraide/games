@@ -110,24 +110,24 @@
         </getgroup>
     </group>
     <group eventID="4" id="-1">
+        <pick-type comment="false" x="728" y="360">
+            <actortype eid="15" id="0"/>
+        </pick-type>
+        <get-xy comment="false" x="347" y="195">
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="0"/>
+        </get-xy>
+        <get-val-9-3 comment="false" x="524" y="309"/>
+        <get-xy comment="false" x="337" y="486">
+            <ACTOR eid="lastcollided" id="0"/>
+            <int id="1" val="0"/>
+        </get-xy>
+        <get-val-9-2 comment="false" x="642" y="210"/>
         <collision-type2 comment="false" x="780" y="592">
             <int id="0" val="0"/>
             <int id="1" val="0"/>
             <int id="2" val="0"/>
         </collision-type2>
-        <get-val-9-2 comment="false" x="642" y="210"/>
-        <get-xy comment="false" x="337" y="486">
-            <ACTOR eid="lastcollided" id="0"/>
-            <int id="1" val="0"/>
-        </get-xy>
-        <get-val-9-3 comment="false" x="524" y="309"/>
-        <get-xy comment="false" x="347" y="195">
-            <ACTOR eid="this" id="0"/>
-            <int id="1" val="0"/>
-        </get-xy>
-        <pick-type comment="false" x="728" y="360">
-            <actortype eid="15" id="0"/>
-        </pick-type>
     </group>
     <group eventID="5" id="0">
         <step comment="false" x="15" y="15">
@@ -173,20 +173,20 @@
             <int id="0" val=""/>
         </if>
     </group>
-    <group eventID="6" id="5">
+    <group eventID="6" id="2">
         <else-if comment="false" x="558" y="298">
             <group eventID="6" id="-1"/>
             <int id="0" val=""/>
         </else-if>
     </group>
-    <group eventID="6" id="8">
+    <group eventID="6" id="3">
         <periodic comment="false" x="686" y="145">
             <group eventID="6" id="-1"/>
             <int id="0" val="1"/>
             <ACTOR eid="this" id="2"/>
         </periodic>
     </group>
-    <group eventID="6" id="11">
+    <group eventID="6" id="4">
         <if comment="false" x="809" y="541">
             <group eventID="6" id="-1"/>
             <eq comment="false" id="0" x="0" y="0">
@@ -197,7 +197,7 @@
             </eq>
         </if>
     </group>
-    <group eventID="6" id="12">
+    <group eventID="6" id="5">
         <dolater comment="false" x="189" y="203">
             <group eventID="6" id="-1">
                 <setanim comment="false" x="200" y="230">

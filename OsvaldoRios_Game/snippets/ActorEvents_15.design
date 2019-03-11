@@ -100,9 +100,9 @@
         </set-val-8-7>
     </group>
     <group eventID="16" id="-1">
-        <get-val-8-7 comment="false" x="493" y="442"/>
-        <get-val-8-3 comment="false" x="719" y="679"/>
         <get-val-8-1 comment="false" x="825" y="489"/>
+        <get-val-8-3 comment="false" x="719" y="679"/>
+        <get-val-8-7 comment="false" x="493" y="442"/>
     </group>
     <group eventID="1" id="0">
         <step comment="false" x="15" y="15">
@@ -258,10 +258,10 @@
         </set-game-val-3>
     </group>
     <group eventID="17" id="-1">
+        <get-val-8-7 comment="false" x="126" y="291"/>
         <neg comment="false" x="495" y="196">
             <int id="0" val="1"/>
         </neg>
-        <get-val-8-7 comment="false" x="126" y="291"/>
     </group>
     <group eventID="2" id="0">
         <step comment="false" x="15" y="15">
@@ -483,17 +483,106 @@
             <group eventID="22" id="-1">
                 <if comment="false" x="26" y="40">
                     <group eventID="22" id="-1">
-                        <die comment="false" x="37" y="70">
+                        <set-blend-actor comment="false" x="37" y="70">
                             <ACTOR eid="this" id="0"/>
-                        </die>
+                            <int id="1" val="6"/>
+                        </set-blend-actor>
+                        <set-dxy comment="false" x="37" y="97">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="0"/>
+                        </set-dxy>
+                        <setanim comment="false" x="37" y="124">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="Ghost"/>
+                        </setanim>
                     </group>
-                    <eq comment="false" id="0" x="0" y="0">
+                    <lesseq comment="false" id="0" x="0" y="0">
                         <get-val-8-9 comment="false" id="0" x="0" y="0"/>
                         <int id="1" val="0"/>
+                    </lesseq>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="22" id="1">
+        <die comment="false" x="378" y="333">
+            <ACTOR eid="this" id="0"/>
+        </die>
+    </group>
+    <group eventID="22" id="2">
+        <pause-unpause comment="false" x="180" y="494">
+            <int id="0" val="0"/>
+        </pause-unpause>
+    </group>
+    <group eventID="22" id="3">
+        <set-xy comment="false" x="747" y="247">
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="0"/>
+            <int id="2" val="72"/>
+        </set-xy>
+    </group>
+    <group eventID="22" id="5">
+        <set-xy comment="false" x="440" y="76">
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="0"/>
+            <int id="2" val="70"/>
+        </set-xy>
+    </group>
+    <group eventID="22" id="10">
+        <dolater comment="false" x="592" y="326">
+            <group eventID="22" id="-1">
+                <setanim comment="false" x="603" y="353">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="Dead"/>
+                </setanim>
+            </group>
+            <int id="0" val="2"/>
+            <ACTOR eid="this" id="2"/>
+        </dolater>
+    </group>
+    <group eventID="22" id="15">
+        <filter-sepia comment="false" x="1019" y="596"/>
+    </group>
+    <group eventID="22" id="18">
+        <apply-filter comment="false" x="720" y="101">
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val=""/>
+        </apply-filter>
+    </group>
+    <group eventID="22" id="-1">
+        <filter-negative comment="false" x="967" y="123"/>
+        <filter-grayscale comment="false" x="557" y="215"/>
+        <filter-bright comment="false" x="295" y="294">
+            <int id="0" val="150"/>
+        </filter-bright>
+        <filter-tint comment="false" x="657" y="510">
+            <color b="0" g="0" id="0" r="0"/>
+            <int id="1" val="100"/>
+        </filter-tint>
+        <moreeq comment="false" x="454" y="457">
+            <int id="0" val=""/>
+            <int id="1" val="0"/>
+        </moreeq>
+        <eq comment="false" x="64" y="324">
+            <int id="0" val=""/>
+            <int id="1" val="0"/>
+        </eq>
+    </group>
+    <group eventID="23" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="23" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="23" id="-1"/>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <getanim comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                        </getanim>
+                        <int id="1" val="Dead"/>
                     </eq>
                 </if>
             </group>
         </step>
     </group>
-    <group eventID="22" id="-1"/>
+    <group eventID="23" id="-1"/>
 </groups>

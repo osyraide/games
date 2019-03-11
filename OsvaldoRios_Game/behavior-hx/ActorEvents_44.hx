@@ -69,34 +69,87 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_22 extends ActorScript
+class ActorEvents_44 extends ActorScript
 {
+	public var _Health:Float;
+	public var _EnemyCopy:ActorType;
+	public var _FlashingLight:String;
+	public var _Left:String;
+	public var _2:Scene;
+	public var _22:Region;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
+		nameMap.set("Health", "_Health");
+		_Health = 0.0;
+		nameMap.set("Enemy Copy", "_EnemyCopy");
+		nameMap.set("Flashing Light", "_FlashingLight");
+		nameMap.set("Left", "_Left");
+		nameMap.set("2", "_2");
+		nameMap.set("22", "_22");
 		
 	}
 	
 	override public function init()
 	{
 		
-		/* ======================= Every N seconds ======================== */
-		runPeriodically(1000 * 1, function(timeTask:TimedTask):Void
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
 		{
 			if(wrapper.enabled)
 			{
-				if((actor.getAnimation() == "Flashing Light"))
+				if(isKeyDown("down"))
 				{
-					actor.setAnimation("" + "Back");
+					actor.setXVelocity(0);
+					actor.setAnimation("" + "Stationary");
+					Engine.engine.setGameAttribute("Stationary", true);
 				}
-				else if((actor.getAnimation() == "Back"))
+				else if(isKeyDown("left"))
 				{
-					actor.setAnimation("" + "Flashing Light");
+					actor.setXVelocity(-8);
+					actor.setAnimation("" + "Walking Forward");
+					actor.applyImpulseInDirection(180, .2);
+					Engine.engine.setGameAttribute("Stationary", false);
+				}
+				else if(isKeyDown("right"))
+				{
+					actor.setXVelocity(8);
+					actor.setAnimation("" + "Walking Forward");
+					actor.applyImpulseInDirection(180, -.2);
+					Engine.engine.setGameAttribute("Stationary", false);
+				}
+				else if(isKeyDown("up"))
+				{
+					actor.setXVelocity(0);
+					actor.setAnimation("" + "Walking Forward");
+					Engine.engine.setGameAttribute("Stationary", false);
+				}
+				else if(isKeyDown("Jump"))
+				{
+					actor.setXVelocity(0);
+					actor.setAnimation("" + "Jumping");
+					Engine.engine.setGameAttribute("Stationary", false);
 				}
 			}
-		}, actor);
+		});
+		
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				if((actor.getScreenX() <= 90))
+				{
+					actor.applyImpulseInDirection(180, -4);
+				}
+				else if((actor.getScreenX() > 330))
+				{
+					actor.applyImpulseInDirection(180, 4);
+				}
+			}
+		});
 		
 	}
 	

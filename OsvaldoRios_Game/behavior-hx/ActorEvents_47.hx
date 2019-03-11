@@ -69,36 +69,44 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_20 extends ActorScript
+class ActorEvents_47 extends ActorScript
 {
-	public var _Enemy:Group;
-	public var _Nicki:Actor;
-	public var _Nicki2:ActorType;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
-		nameMap.set("Enemy", "_Enemy");
-		nameMap.set("Nicki", "_Nicki");
-		nameMap.set("Nicki2", "_Nicki2");
 		
 	}
 	
 	override public function init()
 	{
 		
-		/* ======================== Something Else ======================== */
-		addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
 		{
 			if(wrapper.enabled)
 			{
-				runPeriodically(1000 * 3, function(timeTask:TimedTask):Void
+				if(!(Engine.engine.getGameAttribute("Stationary")))
 				{
-					actor.setAnimation("" + "Back Turned");
-				}, actor);
+					actor.applyImpulseInDirection(135, .3);
+				}
+				else if(Engine.engine.getGameAttribute("Stationary"))
+				{
+					actor.applyImpulseInDirection(135, 0);
+				}
 			}
 		});
+		
+		/* ======================= Every N seconds ======================== */
+		runPeriodically(1000 * 5, function(timeTask:TimedTask):Void
+		{
+			if(wrapper.enabled)
+			{
+				actor.setX(184);
+				actor.setY(234);
+			}
+		}, actor);
 		
 	}
 	

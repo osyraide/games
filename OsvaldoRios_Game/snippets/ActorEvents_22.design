@@ -32,7 +32,7 @@
                     </eq>
                 </else-if>
             </group>
-            <int id="0" val="1"/>
+            <int id="0" val="2"/>
             <ACTOR eid="this" id="2"/>
         </event-periodic>
     </group>
@@ -54,4 +54,21 @@
         </step>
     </group>
     <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <collide comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <periodic comment="false" x="26" y="45">
+                    <group eventID="3" id="-1">
+                        <setanim comment="false" x="37" y="72">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="Back"/>
+                        </setanim>
+                    </group>
+                    <int id="0" val="3"/>
+                    <ACTOR eid="this" id="2"/>
+                </periodic>
+            </group>
+        </collide>
+    </group>
+    <group eventID="3" id="-1"/>
 </groups>

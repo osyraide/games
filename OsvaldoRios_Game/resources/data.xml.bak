@@ -58,8 +58,8 @@
         <anim across="3" down="2" durations="1000,50,100,50,100" height="256" id="0" loop="true" name="Flashing Light " numframes="5" originx="20" originy="64" sync="false" version="2" width="120">
             <poly data="4,0,0,40,0,40,128,0,128" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="true"/>
         </anim>
-        <anim across="2" down="2" durations="2000,100,100" height="128" id="1" loop="true" name="Back" numframes="3" originx="10" originy="32" sync="false" version="2" width="40">
-            <poly data="4,0,0,20,0,20,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="false"/>
+        <anim across="2" down="2" durations="100,100,100" height="256" id="1" loop="true" name="Back" numframes="3" originx="20" originy="64" sync="false" version="2" width="80">
+            <poly data="4,0,0,40,0,40,128,0,128" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="true"/>
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="12" fixedrot="false" fric="0.2" gid="3" id="31" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.1" name="Enemy Copy" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="32" static="false">
@@ -195,6 +195,12 @@
         </anim>
         <anim across="3" down="2" durations="150,100,250,100,150" height="256" id="5" loop="true" name="Jumping" numframes="5" originx="32" originy="64" sync="false" version="2" width="192">
             <poly data="4,0,0,64,0,64,128,0,128" density="0.1" fric="0.2" gid="5" id="0" name="Animation 5" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="128" id="6" loop="true" name="Dead" numframes="1" originx="64" originy="64" sync="false" version="2" width="128">
+            <poly data="4,0,0,128,0,128,128,0,128" density="0.1" fric="0.2" gid="-1000" id="0" name="Dead" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="3" down="2" durations="500,200,200,200,200,200" height="256" id="7" loop="true" name="Ghost" numframes="6" originx="64" originy="64" sync="false" version="2" width="384">
+            <poly data="4,0,0,128,0,128,128,0,128" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 7" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <sprite atlasID="0" default="4" defaultAnimation="4" desc="" height="128" id="45" name="Nicki" shared="false" width="64">
