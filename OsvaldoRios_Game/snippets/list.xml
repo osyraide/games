@@ -55,9 +55,9 @@
         <control default="" defaultValue="" desc="" dropdown="" fullname="Left" hidden="false" id="4" name="_Left" order="5"/>
         <scene default="" defaultValue="" desc="" dropdown="" fullname="2" hidden="false" id="5" name="_2" order="6"/>
         <region default="" defaultValue="" desc="" dropdown="" fullname="22" hidden="false" id="6" name="_22" order="7"/>
-        <number default="1" defaultValue="1" desc="" dropdown="" fullname="Starting Score" hidden="false" id="7" name="_StartingScore" order="8"/>
+        <number default="4" defaultValue="4" desc="" dropdown="" fullname="Starting Score" hidden="false" id="7" name="_StartingScore" order="8"/>
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Persistent Score?" hidden="false" id="8" name="_PersistentScore" order="9"/>
-        <number default="4" defaultValue="4" desc="" dropdown="" fullname="Present Score" hidden="false" id="9" name="_PresentScore" order="3"/>
+        <number default="4.0" defaultValue="4.0" desc="" dropdown="" fullname="Present Score" hidden="false" id="9" name="_PresentScore" order="3"/>
         <text default="" defaultValue="" desc="" dropdown="" fullname="Zero Health Action" hidden="false" id="10" name="_ZeroHealthAction" order="4"/>
         <blocks/>
         <events>
@@ -72,6 +72,7 @@
             <event displayName="Actor - Type" enabled="true" id="21" name="event-collide-actortotype" order="20" repeats="true"/>
             <event displayName="Kill Self" enabled="true" id="22" name="step" order="22" repeats="true"/>
             <event displayName="Updating" enabled="false" id="23" name="step" order="23" repeats="true"/>
+            <event displayName="After N secs" enabled="false" id="24" name="event-delay" order="25" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="20" attachedevent="true" class="scripts.ActorEvents_20" classname="scripts.ActorEvents_20" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="9" name="ActorEvents_20" oid="-1" package="scripts." shared="false" type="actor">
@@ -81,9 +82,10 @@
         <blocks/>
         <events>
             <event displayName="Every N secs" enabled="true" id="3" name="event-periodic" order="5" repeats="true"/>
-            <event displayName="Updating" enabled="false" id="4" name="step" order="7" repeats="true"/>
-            <event displayName="Updating" enabled="false" id="5" name="step" order="8" repeats="true"/>
-            <event displayName="Actor - Any" enabled="true" id="6" name="collide" order="6" repeats="true"/>
+            <event displayName="Updating" enabled="false" id="4" name="step" order="8" repeats="true"/>
+            <event displayName="Updating" enabled="false" id="5" name="step" order="9" repeats="true"/>
+            <event displayName="Actor - Any" enabled="true" id="6" name="collide" order="7" repeats="true"/>
+            <event displayName="Updating" enabled="true" id="7" name="step" order="6" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="22" attachedevent="true" class="scripts.ActorEvents_22" classname="scripts.ActorEvents_22" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="10" name="ActorEvents_22" oid="-1" package="scripts." shared="false" type="actor">
@@ -98,13 +100,20 @@
         <blocks/>
         <events>
             <event displayName="Damage" enabled="false" id="3" name="step" order="2" repeats="true"/>
-            <event displayName="Updating" enabled="false" id="4" name="step" order="9" repeats="false"/>
-            <event displayName="Actor Created" enabled="true" id="5" name="event-type-create-kill" order="4" repeats="false"/>
-            <event displayName="Updating" enabled="false" id="6" name="step" order="5" repeats="false"/>
-            <event displayName="Drawing" enabled="false" id="7" name="draw" order="6" repeats="true"/>
-            <event displayName="Drawing" enabled="false" id="8" name="draw" order="8" repeats="true"/>
-            <event displayName="Drawing" enabled="false" id="9" name="draw" order="7" repeats="true"/>
+            <event displayName="Updating" enabled="true" id="4" name="step" order="11" repeats="false"/>
+            <event displayName="Actor Created" enabled="false" id="5" name="event-type-create-kill" order="5" repeats="false"/>
+            <event displayName="Updating" enabled="true" id="6" name="step" order="6" repeats="false"/>
             <event displayName="Every N secs" enabled="false" id="10" name="event-periodic" order="3" repeats="true"/>
+            <event displayName="Updating" enabled="true" id="11" name="step" order="13" repeats="true"/>
+            <event displayName="Updating" enabled="true" id="12" name="step" order="15" repeats="true"/>
+            <event displayName="Updating" enabled="true" id="13" name="step" order="17" repeats="true"/>
+            <event displayName="Updating" enabled="true" id="14" name="step" order="7" repeats="true"/>
+            <event displayName="Updating" enabled="true" id="15" name="step" order="12" repeats="true"/>
+            <event displayName="Updating" enabled="true" id="16" name="step" order="14" repeats="true"/>
+            <event displayName="Updating" enabled="true" id="17" name="step" order="16" repeats="true"/>
+            <event displayName="Updating" enabled="true" id="18" name="step" order="18" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="19" name="draw" order="19" repeats="true"/>
+            <event displayName="Updating" enabled="false" id="20" name="step" order="4" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="31" attachedevent="true" class="scripts.ActorEvents_31" classname="scripts.ActorEvents_31" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="12" name="ActorEvents_31" oid="-1" package="scripts." shared="false" type="actor">

@@ -41,17 +41,28 @@
         <step comment="false" x="15" y="15">
             <group eventID="2" id="-1">
                 <if comment="false" x="26" y="40">
-                    <group eventID="2" id="-1">
-                        <die comment="false" x="37" y="73">
+                    <group eventID="2" id="-1"/>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <getanim comment="false" id="0" x="0" y="0">
                             <ACTOR eid="this" id="0"/>
-                        </die>
-                    </group>
-                    <isalive comment="false" id="0" x="0" y="0">
-                        <ACTOR eid="this" id="0"/>
-                    </isalive>
+                        </getanim>
+                        <int id="1" val=""/>
+                    </eq>
                 </if>
             </group>
         </step>
+    </group>
+    <group eventID="2" id="1">
+        <if comment="false" x="517" y="351">
+            <group eventID="2" id="-1">
+                <die comment="false" x="528" y="384">
+                    <ACTOR eid="this" id="0"/>
+                </die>
+            </group>
+            <isalive comment="false" id="0" x="0" y="0">
+                <ACTOR eid="this" id="0"/>
+            </isalive>
+        </if>
     </group>
     <group eventID="2" id="-1"/>
     <group eventID="3" id="0">

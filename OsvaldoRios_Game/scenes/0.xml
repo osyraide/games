@@ -9,7 +9,7 @@
     <regions/>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="1" c="false" group="5" id="15" name="Nicki 1" sx="1.0" sy="1.0" x="13" y="250" z="0"/>
+        <actor a="0.0" aid="1" c="false" group="5" id="15" name="Nicki 1" sx="1.0" sy="1.0" x="41" y="249" z="0"/>
         <actor a="0.0" aid="4" c="false" group="3" id="20" name="Enemy 4" sx="1.0" sy="1.0" x="353" y="281" z="0"/>
         <actor a="0.0" aid="6" c="false" group="3" id="22" name="Enemy 2 6" sx="1.0" sy="1.0" x="257" y="250" z="0"/>
         <actor a="0.0" aid="7" c="false" group="3" id="22" name="Enemy 2 7" sx="1.0" sy="1.0" x="592" y="251" z="0"/>
