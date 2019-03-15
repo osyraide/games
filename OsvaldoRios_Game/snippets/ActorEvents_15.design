@@ -437,7 +437,7 @@
             <int id="1" val="0"/>
         </get-xy>
     </group>
-    <group eventID="20" id="6">
+    <group eventID="20" id="4">
         <pause-unpause comment="false" x="394" y="263">
             <int id="0" val="0"/>
         </pause-unpause>

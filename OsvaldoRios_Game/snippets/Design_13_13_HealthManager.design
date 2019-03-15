@@ -765,25 +765,15 @@
         </isonscreen>
     </group>
     <group eventID="19" id="-1">
-        <eq comment="false" x="876" y="158">
+        <eq comment="false" x="714" y="634">
             <getanim comment="false" id="0" x="0" y="0">
-                <ACTOR eid="lastcollided" id="0"/>
+                <ACTOR eid="lastcreated" id="0"/>
             </getanim>
             <int id="1" val="Flashing Light"/>
         </eq>
-        <collision-bottom comment="false" x="38" y="417">
-            <int id="0" val="0"/>
-            <int id="1" val="0"/>
-        </collision-bottom>
-        <collision-type2 comment="false" x="763" y="426">
-            <int id="0" val="0"/>
-            <int id="1" val="0"/>
-            <int id="2" val="0"/>
-        </collision-type2>
-        <and comment="false" x="455" y="518">
-            <int id="0" val=""/>
-            <int id="1" val=""/>
-        </and>
+        <neg comment="false" x="745" y="573">
+            <int id="0" val="1"/>
+        </neg>
         <minmax comment="false" x="143" y="601">
             <int id="0" val="1"/>
             <minus comment="false" id="1" x="0" y="0">
@@ -792,12 +782,22 @@
             </minus>
             <int id="2" val="0"/>
         </minmax>
-        <neg comment="false" x="745" y="573">
-            <int id="0" val="1"/>
-        </neg>
-        <eq comment="false" x="714" y="634">
+        <and comment="false" x="455" y="518">
+            <int id="0" val=""/>
+            <int id="1" val=""/>
+        </and>
+        <collision-type2 comment="false" x="763" y="426">
+            <int id="0" val="0"/>
+            <int id="1" val="0"/>
+            <int id="2" val="0"/>
+        </collision-type2>
+        <collision-bottom comment="false" x="38" y="417">
+            <int id="0" val="0"/>
+            <int id="1" val="0"/>
+        </collision-bottom>
+        <eq comment="false" x="876" y="158">
             <getanim comment="false" id="0" x="0" y="0">
-                <ACTOR eid="lastcreated" id="0"/>
+                <ACTOR eid="lastcollided" id="0"/>
             </getanim>
             <int id="1" val="Flashing Light"/>
         </eq>

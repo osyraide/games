@@ -7,21 +7,7 @@
                     <group eventID="1" id="-1">
                         <setanim comment="false" x="37" y="80">
                             <ACTOR eid="this" id="0"/>
-                            <int id="1" val="Back"/>
-                        </setanim>
-                    </group>
-                    <eq comment="false" id="0" x="0" y="0">
-                        <getanim comment="false" id="0" x="0" y="0">
-                            <ACTOR eid="this" id="0"/>
-                        </getanim>
-                        <int id="1" val="Flashing Light"/>
-                    </eq>
-                </if>
-                <else-if comment="false" x="26" y="119">
-                    <group eventID="1" id="-1">
-                        <setanim comment="false" x="37" y="157">
-                            <ACTOR eid="this" id="0"/>
-                            <int id="1" val="Flashing Light"/>
+                            <int id="1" val="Light"/>
                         </setanim>
                     </group>
                     <eq comment="false" id="0" x="0" y="0">
@@ -30,25 +16,89 @@
                         </getanim>
                         <int id="1" val="Back"/>
                     </eq>
-                </else-if>
-            </group>
-            <int id="0" val="2"/>
-            <ACTOR eid="this" id="2"/>
-        </event-periodic>
-    </group>
-    <group eventID="1" id="-1"/>
-    <group eventID="2" id="0">
-        <step comment="false" x="15" y="15">
-            <group eventID="2" id="-1">
-                <if comment="false" x="26" y="40">
-                    <group eventID="2" id="-1"/>
+                </if>
+                <else-if comment="false" x="26" y="119">
+                    <group eventID="1" id="-1">
+                        <setanim comment="false" x="37" y="157">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="Back"/>
+                        </setanim>
+                    </group>
                     <eq comment="false" id="0" x="0" y="0">
                         <getanim comment="false" id="0" x="0" y="0">
                             <ACTOR eid="this" id="0"/>
                         </getanim>
-                        <int id="1" val=""/>
+                        <int id="1" val="Light"/>
                     </eq>
-                </if>
+                </else-if>
+            </group>
+            <int id="0" val="3"/>
+            <ACTOR eid="this" id="2"/>
+        </event-periodic>
+    </group>
+    <group eventID="1" id="5">
+        <repeatu comment="false" x="800" y="245">
+            <group eventID="1" id="-1"/>
+            <int id="0" val=""/>
+        </repeatu>
+    </group>
+    <group eventID="1" id="7">
+        <else-if comment="false" x="248" y="726">
+            <group eventID="1" id="-1">
+                <setanim comment="false" x="259" y="764">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="Back"/>
+                </setanim>
+            </group>
+            <eq comment="false" id="0" x="0" y="0">
+                <getanim comment="false" id="0" x="0" y="0">
+                    <ACTOR eid="this" id="0"/>
+                </getanim>
+                <int id="1" val="Flashing Light"/>
+            </eq>
+        </else-if>
+    </group>
+    <group eventID="1" id="10">
+        <dolater comment="false" x="865" y="375">
+            <group eventID="1" id="-1"/>
+            <int id="0" val=""/>
+            <ACTOR eid="this" id="2"/>
+        </dolater>
+    </group>
+    <group eventID="1" id="11">
+        <else-if comment="false" x="239" y="478">
+            <group eventID="1" id="-1"/>
+            <int id="0" val=""/>
+        </else-if>
+        <continue comment="false" x="239" y="530"/>
+    </group>
+    <group eventID="1" id="12">
+        <setanim comment="false" x="788" y="78">
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="Back"/>
+        </setanim>
+    </group>
+    <group eventID="1" id="-1">
+        <eq comment="false" x="722" y="612">
+            <getanim comment="false" id="0" x="0" y="0">
+                <ACTOR eid="this" id="0"/>
+            </getanim>
+            <int id="1" val="Flashing Light"/>
+        </eq>
+    </group>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <periodic comment="false" x="26" y="40">
+                    <group eventID="2" id="-1">
+                        <setanim comment="false" x="37" y="67">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="Flashing Light"/>
+                        </setanim>
+                    </group>
+                    <int id="0" val="4"/>
+                    <ACTOR eid="this" id="2"/>
+                </periodic>
             </group>
         </step>
     </group>
@@ -64,7 +114,50 @@
             </isalive>
         </if>
     </group>
-    <group eventID="2" id="-1"/>
+    <group eventID="2" id="11">
+        <if comment="false" x="824" y="144">
+            <group eventID="2" id="-1"/>
+            <eq comment="false" id="0" x="0" y="0">
+                <getanim comment="false" id="0" x="0" y="0">
+                    <ACTOR eid="this" id="0"/>
+                </getanim>
+                <int id="1" val=""/>
+            </eq>
+        </if>
+    </group>
+    <group eventID="2" id="12">
+        <else-if comment="false" x="32" y="407">
+            <group eventID="2" id="-1">
+                <setanim comment="false" x="43" y="445">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="Flashing Light"/>
+                </setanim>
+            </group>
+            <eq comment="false" id="0" x="0" y="0">
+                <getanim comment="false" id="0" x="0" y="0">
+                    <ACTOR eid="this" id="0"/>
+                </getanim>
+                <int id="1" val="Back"/>
+            </eq>
+        </else-if>
+    </group>
+    <group eventID="2" id="14">
+        <if comment="false" x="537" y="573">
+            <group eventID="2" id="-1"/>
+            <eq comment="false" id="0" x="0" y="0">
+                <getanim comment="false" id="0" x="0" y="0">
+                    <ACTOR eid="this" id="0"/>
+                </getanim>
+                <int id="1" val="Back"/>
+            </eq>
+        </if>
+    </group>
+    <group eventID="2" id="-1">
+        <keystate comment="false" x="515" y="133">
+            <int id="0" val="0"/>
+            <control eid="2" id="1"/>
+        </keystate>
+    </group>
     <group eventID="3" id="0">
         <collide comment="false" x="15" y="15">
             <group eventID="3" id="-1">

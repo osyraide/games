@@ -40,6 +40,7 @@ import box2D.common.math.B2Vec2;
 import box2D.dynamics.B2Body;
 import box2D.dynamics.B2Fixture;
 import box2D.dynamics.joints.B2Joint;
+import box2D.collision.shapes.B2Shape;
 
 import motion.Actuate;
 import motion.easing.Back;
@@ -69,36 +70,52 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_31 extends ActorScript
+class SceneEvents_1 extends SceneScript
 {
-	public var _FlashingLight:String;
 	
 	
-	public function new(dummy:Int, actor:Actor, dummy2:Engine)
+	public function new(dummy:Int, dummy2:Engine)
 	{
-		super(actor);
-		nameMap.set("Flashing Light", "_FlashingLight");
+		super();
 		
 	}
 	
 	override public function init()
 	{
 		
-		/* ======================= Every N seconds ======================== */
-		runPeriodically(1000 * 1, function(timeTask:TimedTask):Void
+		/* ======================== When Creating ========================= */
+		Engine.engine.setGameAttribute("Stationary", true);
+		
+		/* ======================== Actor of Type ========================= */
+		addWhenTypeGroupKilledListener(getActorType(15), function(eventActor:Actor, list:Array<Dynamic>):Void
 		{
 			if(wrapper.enabled)
 			{
-				if((actor.getAnimation() == "Flashing Light"))
+				createRecycledActor(getActorType(44), 211, 215, Script.FRONT);
+			}
+		});
+		
+		/* ========================= When Drawing ========================= */
+		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				g.drawString("" + Engine.engine.getGameAttribute("Debug"), 200, 200);
+			}
+		});
+		
+		/* ========================= When Drawing ========================= */
+		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				if(engine.isPaused())
 				{
-					actor.setAnimation("" + "Animation 1");
-				}
-				else if((actor.getAnimation() == "Animation 1"))
-				{
-					actor.setAnimation("" + "Flashing Light");
+					g.drawString("" + "Death", 220, 330);
+					g.strokeSize = Std.int(5);
 				}
 			}
-		}, actor);
+		});
 		
 	}
 	
