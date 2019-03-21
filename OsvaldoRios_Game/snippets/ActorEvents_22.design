@@ -36,13 +36,13 @@
             <ACTOR eid="this" id="2"/>
         </event-periodic>
     </group>
-    <group eventID="1" id="5">
+    <group eventID="1" id="1">
         <repeatu comment="false" x="800" y="245">
             <group eventID="1" id="-1"/>
             <int id="0" val=""/>
         </repeatu>
     </group>
-    <group eventID="1" id="7">
+    <group eventID="1" id="2">
         <else-if comment="false" x="248" y="726">
             <group eventID="1" id="-1">
                 <setanim comment="false" x="259" y="764">
@@ -58,21 +58,21 @@
             </eq>
         </else-if>
     </group>
-    <group eventID="1" id="10">
+    <group eventID="1" id="3">
         <dolater comment="false" x="865" y="375">
             <group eventID="1" id="-1"/>
             <int id="0" val=""/>
             <ACTOR eid="this" id="2"/>
         </dolater>
     </group>
-    <group eventID="1" id="11">
+    <group eventID="1" id="4">
         <else-if comment="false" x="239" y="478">
             <group eventID="1" id="-1"/>
             <int id="0" val=""/>
         </else-if>
         <continue comment="false" x="239" y="530"/>
     </group>
-    <group eventID="1" id="12">
+    <group eventID="1" id="5">
         <setanim comment="false" x="788" y="78">
             <ACTOR eid="this" id="0"/>
             <int id="1" val="Back"/>
@@ -114,7 +114,7 @@
             </isalive>
         </if>
     </group>
-    <group eventID="2" id="11">
+    <group eventID="2" id="2">
         <if comment="false" x="824" y="144">
             <group eventID="2" id="-1"/>
             <eq comment="false" id="0" x="0" y="0">
@@ -125,7 +125,7 @@
             </eq>
         </if>
     </group>
-    <group eventID="2" id="12">
+    <group eventID="2" id="3">
         <else-if comment="false" x="32" y="407">
             <group eventID="2" id="-1">
                 <setanim comment="false" x="43" y="445">
@@ -141,7 +141,7 @@
             </eq>
         </else-if>
     </group>
-    <group eventID="2" id="14">
+    <group eventID="2" id="4">
         <if comment="false" x="537" y="573">
             <group eventID="2" id="-1"/>
             <eq comment="false" id="0" x="0" y="0">

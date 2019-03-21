@@ -220,6 +220,14 @@
         </if>
     </group>
     <group eventID="6" id="-1">
+        <get-xy comment="false" x="806" y="411">
+            <ACTOR eid="1" id="0"/>
+            <int id="1" val="1"/>
+        </get-xy>
+        <less comment="false" x="726" y="374">
+            <int id="0" val=""/>
+            <int id="1" val="246"/>
+        </less>
         <more comment="false" x="686" y="524">
             <get-xy comment="false" id="0" x="0" y="0">
                 <ACTOR eid="1" id="0"/>
@@ -227,14 +235,6 @@
             </get-xy>
             <int id="1" val="246"/>
         </more>
-        <less comment="false" x="726" y="374">
-            <int id="0" val=""/>
-            <int id="1" val="246"/>
-        </less>
-        <get-xy comment="false" x="806" y="411">
-            <ACTOR eid="1" id="0"/>
-            <int id="1" val="1"/>
-        </get-xy>
     </group>
     <group eventID="11" id="0">
         <step comment="false" x="15" y="15">
@@ -343,7 +343,7 @@
                                 <int id="1" val="0"/>
                             </get-xy>
                             <int id="3" val="0"/>
-                            <int id="4" val="2"/>
+                            <int id="4" val="-2"/>
                         </push-shove>
                     </group>
                     <and comment="false" id="0" x="0" y="0">
@@ -695,11 +695,6 @@
             </group>
         </init>
     </group>
-    <group eventID="21" id="3">
-        <set-val-8-9 comment="false" x="518" y="157">
-            <get-val-8-7 comment="false" id="0" x="0" y="0"/>
-        </set-val-8-9>
-    </group>
     <group eventID="21" id="-1"/>
     <group eventID="22" id="0">
         <event-collide-typetotype comment="false" x="15" y="15">
@@ -730,7 +725,7 @@
                             <getanim comment="false" id="0" x="0" y="0">
                                 <ACTOR eid="10" id="0"/>
                             </getanim>
-                            <int id="1" val="Sit"/>
+                            <int id="1" val="Back Turned"/>
                         </eq>
                         <eq comment="false" id="1" x="0" y="0">
                             <get-game-val-0 comment="false" id="0" x="0" y="0"/>
@@ -743,65 +738,61 @@
             <actortype eid="20" id="1"/>
         </event-collide-typetotype>
     </group>
-    <group eventID="22" id="17">
+    <group eventID="22" id="1">
         <if comment="false" x="788" y="394">
             <group eventID="22" id="-1">
-                <set-val-11-2 comment="false" x="799" y="432">
+                <set-val-11-2 comment="false" x="799" y="414">
                     <minus comment="false" id="0" x="0" y="0">
                         <get-val-11-3 comment="false" id="0" x="0" y="0"/>
                         <int id="1" val="1"/>
                     </minus>
                 </set-val-11-2>
             </group>
-            <eq comment="false" id="0" x="0" y="0">
-                <getanim comment="false" id="0" x="0" y="0">
-                    <ACTOR eid="10" id="0"/>
-                </getanim>
-                <int id="1" val="Animation 1"/>
-            </eq>
-        </if>
-    </group>
-    <group eventID="22" id="2">
-        <set-val-8-9 comment="false" x="897" y="559">
-            <minus comment="false" id="0" x="0" y="0">
-                <get-val-8-9 comment="false" id="0" x="0" y="0"/>
-                <int id="1" val="1"/>
-            </minus>
-        </set-val-8-9>
-    </group>
-    <group eventID="22" id="18">
-        <if comment="false" x="554" y="580">
-            <group eventID="22" id="-1">
-                <set-game-val-0 comment="false" x="565" y="600">
-                    <false comment="false" id="0" x="0" y="0"/>
-                </set-game-val-0>
-            </group>
             <int id="0" val=""/>
         </if>
     </group>
-    <group eventID="22" id="20">
-        <dolater comment="false" x="457" y="314">
-            <group eventID="22" id="-1">
-                <set-game-val-0 comment="false" x="468" y="341">
-                    <true comment="false" id="0" x="0" y="0"/>
-                </set-game-val-0>
-            </group>
-            <int id="0" val="1"/>
-            <ACTOR eid="lastcreated" id="2"/>
-        </dolater>
+    <group eventID="22" id="3">
+        <if comment="false" x="554" y="580">
+            <group eventID="22" id="-1"/>
+            <int id="0" val=""/>
+        </if>
     </group>
     <group eventID="22" id="5">
-        <set-val-11-2 comment="false" x="735" y="291">
+        <set-val-11-2 comment="false" x="920" y="252">
             <int id="0" val=""/>
         </set-val-11-2>
     </group>
-    <group eventID="22" id="21">
-        <set-val-11-2 comment="false" x="24" y="403">
+    <group eventID="22" id="6">
+        <set-val-11-2 comment="false" x="37" y="476">
             <minus comment="false" id="0" x="0" y="0">
                 <get-val-11-3 comment="false" id="0" x="0" y="0"/>
                 <int id="1" val="1"/>
             </minus>
         </set-val-11-2>
+    </group>
+    <group eventID="22" id="7">
+        <else-if comment="false" x="295" y="280">
+            <group eventID="22" id="-1">
+                <set-game-val-0 comment="false" x="306" y="318">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-game-val-0>
+                <dolater comment="false" x="306" y="343">
+                    <group eventID="22" id="-1">
+                        <set-game-val-0 comment="false" x="317" y="370">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-game-val-0>
+                    </group>
+                    <int id="0" val="3"/>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </dolater>
+            </group>
+            <eq comment="false" id="0" x="0" y="0">
+                <getanim comment="false" id="0" x="0" y="0">
+                    <ACTOR eid="10" id="0"/>
+                </getanim>
+                <int id="1" val="Sit"/>
+            </eq>
+        </else-if>
     </group>
     <group eventID="22" id="-1">
         <eq comment="false" x="352" y="481">
@@ -838,7 +829,7 @@
                             <getanim comment="false" id="0" x="0" y="0">
                                 <ACTOR eid="6" id="0"/>
                             </getanim>
-                            <int id="1" val="Light"/>
+                            <int id="1" val="Back"/>
                         </eq>
                         <eq comment="false" id="1" x="0" y="0">
                             <get-game-val-0 comment="false" id="0" x="0" y="0"/>
@@ -851,12 +842,7 @@
             <actortype eid="22" id="1"/>
         </event-collide-typetotype>
     </group>
-    <group eventID="23" id="1">
-        <set-val-8-9 comment="false" x="202" y="317">
-            <int id="0" val=""/>
-        </set-val-8-9>
-    </group>
-    <group eventID="23" id="12">
+    <group eventID="23" id="2">
         <else-if comment="false" x="724" y="483">
             <group eventID="23" id="-1"/>
             <eq comment="false" id="0" x="0" y="0">
@@ -865,12 +851,12 @@
             </eq>
         </else-if>
     </group>
-    <group eventID="23" id="13">
+    <group eventID="23" id="3">
         <set-game-val-0 comment="false" x="235" y="503">
             <true comment="false" id="0" x="0" y="0"/>
         </set-game-val-0>
     </group>
-    <group eventID="23" id="17">
+    <group eventID="23" id="4">
         <dolater comment="false" x="852" y="279">
             <group eventID="23" id="-1">
                 <set-game-val-0 comment="false" x="863" y="306">
@@ -881,7 +867,7 @@
             <ACTOR eid="lastcreated" id="2"/>
         </dolater>
     </group>
-    <group eventID="23" id="18">
+    <group eventID="23" id="5">
         <set-val-11-2 comment="false" x="472" y="348">
             <minus comment="false" id="0" x="0" y="0">
                 <get-val-11-3 comment="false" id="0" x="0" y="0"/>
@@ -889,10 +875,10 @@
             </minus>
         </set-val-11-2>
     </group>
-    <group eventID="23" id="20">
+    <group eventID="23" id="6">
         <if comment="false" x="482" y="563">
             <group eventID="23" id="-1">
-                <set-game-val-0 comment="false" x="493" y="598">
+                <set-game-val-0 comment="false" x="493" y="593">
                     <false comment="false" id="0" x="0" y="0"/>
                 </set-game-val-0>
             </group>
@@ -902,9 +888,7 @@
             </eq>
         </if>
     </group>
-    <group eventID="23" id="-1">
-        <get-val-8-9 comment="false" x="824" y="355"/>
-    </group>
+    <group eventID="23" id="-1"/>
     <group eventID="24" id="0">
         <draw comment="false" x="15" y="15">
             <group eventID="24" id="-1">
@@ -920,4 +904,21 @@
         </draw>
     </group>
     <group eventID="24" id="-1"/>
+    <group eventID="25" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="25" id="-1"/>
+        </step>
+    </group>
+    <group eventID="25" id="1">
+        <mousestate comment="false" x="436" y="287">
+            <int id="0" val="0"/>
+        </mousestate>
+    </group>
+    <group eventID="25" id="2">
+        <mousexy comment="false" x="334" y="389">
+            <int id="0" val="0"/>
+            <int id="1" val="0"/>
+        </mousexy>
+    </group>
+    <group eventID="25" id="-1"/>
 </groups>
